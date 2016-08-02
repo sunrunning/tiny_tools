@@ -20,7 +20,7 @@ function changeencoding()
 			changeencoding ${cur_dir}/${dirlist}
 			cd ..
 		else
-			if [[ $dirlist =~ ".c" ]] || [[ $dirlist =~ ".h" ]];then
+			if [[ $dirlist =~ ".c" ]] || [[ $dirlist =~ ".h" ]] || [[ $dirlist =~ ".C" ]] || [[ $dirlist =~ ".H" ]];then
 				echo "${dirlist}"
 				enca -L zh_CN -x UTF-8 $dirlist
 			fi
