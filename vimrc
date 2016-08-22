@@ -1,3 +1,59 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+"http://blog.csdn.net/tangbin330/article/details/8654770
+"https://github.com/VundleVim/Vundle.vim
+"http://www.linuxidc.com/Linux/2014-04/99719.htm
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" " alternatively, pass a path where Vundle should install plugins
+" "call vundle#begin('~/some/path/here')
+"
+" " let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+"
+" " The following are examples of different formats supported.
+" " Keep Plugin commands between vundle#begin/end.
+" " plugin on GitHub repo
+Plugin 'tpope/vim-fugitive'
+" " plugin from http://vim-scripts.org/vim/scripts.html
+"Plugin 'L9'
+" " Git plugin not hosted on GitHub
+Plugin 'git://git.wincent.com/command-t.git'
+" " git repos on your local machine (i.e. when working on your own plugin)
+Plugin 'file:///home/gmarik/path/to/plugin'
+" " The sparkup vim script is in a subdirectory of this repo called vim.
+" " Pass the path to set the runtimepath properly.
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" " Install L9 and avoid a Naming conflict if you've already installed a
+" " different version somewhere else.
+Plugin 'ascenator/L9', {'name': 'newL9'}
+"
+" " All of your Plugins must be added before the following line
+call vundle#end()            " required
+"filetype plugin indent on    " required
+" " To ignore plugin indent changes, instead use:
+" "filetype plugin on
+" "
+" " Brief help
+" " :PluginList       - lists configured plugins
+" " :PluginInstall    - installs plugins; append `!` to update or just
+" :PluginUpdate
+" " :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" " :PluginClean      - confirms removal of unused plugins; append `!` to
+" auto-approve removal
+" "
+" " see :h vundle for more details or wiki for FAQ
+" " Put your non-Plugin stuff after this line
+
+filetype plugin indent on		"add filetype autocheck
+set completeopt=longest,menu	"close preview window when completion
+
+
+Bundle 'Valloric/YouCompleteMe'
+let g:ycm_global_ycm_extra_conf='/home/saic/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+
 "set compatible
 :colorscheme desert
 set nocompatible
@@ -22,6 +78,14 @@ set laststatus=2
 set statusline=
 set statusline+=%F\
 set statusline+=%h%lx%c
+
+"Taglist function 'http://www.vim.org/scripts/script.php?script_id=273'
+let Tlist_Chow_One_File=1
+let Tlist_Exit_OnlyWindow=1
+"Open the Taglist window
+nmap <C-l> :TlistOpen <CR>
+nmap <C-k> :TlistClose <CR>
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " CSCOPE settings for vim           
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -56,7 +120,9 @@ if has("cscope")
 
     " use both cscope and ctag for 'ctrl-]', ':ta', and 'vim -t'
     set cscopetag
-
+	
+	"Use quickfix windows to show cscope result
+	set cscopequickfix=s-,c-,d-,i-,t-,e-
     " check cscope for definition of a symbol before checking ctags: set to 1
     " if you want the reverse search order.
     set csto=0
@@ -112,7 +178,7 @@ if has("cscope")
     " go back to where you were before the search.  
     "
 
-    nmap <C-\>s :cs find s <C-R>=expand("<cword>")<CR><CR>	
+    nmap <C-\>s :cs find s <C-R>=expand("<cword>")<CR><CR> :cw <CR>
     nmap <C-\>g :cs find g <C-R>=expand("<cword>")<CR><CR>	
     nmap <C-\>c :cs find c <C-R>=expand("<cword>")<CR><CR>	
     nmap <C-\>t :cs find t <C-R>=expand("<cword>")<CR><CR>	
