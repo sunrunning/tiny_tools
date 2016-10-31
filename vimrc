@@ -179,6 +179,9 @@ if has("cscope")
     "
 
     nmap <C-\>s :cs find s <C-R>=expand("<cword>")<CR><CR> :cw <CR>
+	"Find symbol in this Project, and list in QuickFix window
+	nmap <C-z> :cclose<CR>	
+	"Close QuickFix window
     nmap <C-\>g :cs find g <C-R>=expand("<cword>")<CR><CR>	
     nmap <C-\>c :cs find c <C-R>=expand("<cword>")<CR><CR>	
     nmap <C-\>t :cs find t <C-R>=expand("<cword>")<CR><CR>	

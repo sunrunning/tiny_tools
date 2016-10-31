@@ -1,0 +1,8 @@
+AT+CGPADDR				显示PDP地址
+AT+QCSYSMODE			Get hardware available network modes (e.g. WCDMA + HSDPA + HSUPA)
+AT+CSQ					检查网络信号强度，回：+CSQ: **,##;**表示信号质量在10-31之间，##表示误码率在0-99之间。
+AT+CREG					网络注册及状态查询，回：+CREG: <mode>,<stat>;
+						<mode>:0,关闭网络注册结果码;1,当网络注册状态改变时激活网络注册结果码;2,激活网络注册结果码同时显示区域和小区信息. 
+						<stat>:0,没有注册网络同时没找到运营商;1,注册到了本地网络;2,找到运营商但没注册网络;3,注册被拒绝;4,未知的数据;5,注册在漫游状态
+AT+COPS					查询运营商选择状态，回:+COPS:<mode>,<format>,<operator>;
+						<mode>:0-4,default 0.		<format>:0-2,default 2.			<operator>:运营商代码,中国移动46000,联通46001.
