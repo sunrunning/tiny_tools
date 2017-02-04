@@ -1,0 +1,486 @@
+    rx_sig_id_KeyRefc,
+    rx_sig_id_Odo,
+    rx_sig_id_FuelLvlPcnt,
+    rx_sig_id_FuelLvlPcntV,
+    rx_sig_id_ClstrDspdFuelLvlSgmt,
+    rx_sig_id_RmnDrvngDist,
+    rx_sig_id_FuelCsump,
+    rx_sig_id_DrvrDoorOpenSts,
+    rx_sig_id_FrtPsngDoorOpenSts,
+    rx_sig_id_RLDoorOpenSts,
+    rx_sig_id_RRDoorOpenSts,
+    rx_sig_id_LdspcOpenSts,
+    rx_sig_id_BntOpenSts,
+    rx_sig_id_VehLckngSta,
+    rx_sig_id_WhlTyreMontrSts,
+    rx_sig_id_VehSideLghtSts,
+    rx_sig_id_DipdBeamLghtOn,
+    rx_sig_id_MainBeamLghtOn,
+    rx_sig_id_ScurtAlrmSts,
+    rx_sig_id_EnRunA,
+    rx_sig_id_VehicleKeyState,
+    rx_sig_id_SysPwrMdV,
+    rx_sig_id_SysPwrMd,
+    rx_sig_id_PwrMdMstrAccryTrmlSts,
+    rx_sig_id_PwrMdMstrRunCrkTrmlSts,
+    rx_sig_id_SysVolV,
+    rx_sig_id_SysVol,
+    rx_sig_id_SysVolMdV,
+    rx_sig_id_SysVolMd,
+    rx_sig_id_SysBPMEnbd,
+    rx_sig_id_SysBPM,
+    rx_sig_id_BPMMstrVDA,
+    rx_sig_id_ACInCarTem,
+    rx_sig_id_ACAmbtTem,
+    rx_sig_id_ACAmbtTemV,
+    rx_sig_id_OtsdAirTemCrVal_H5,
+    rx_sig_id_RmtACSts,
+    rx_sig_id_RmtACAbotRsn,
+    rx_sig_id_RVSSts,
+    rx_sig_id_RmtSeatHeatSts,
+    rx_sig_id_RmtSeatHeatFlrRsn,
+    rx_sig_id_FLSeatHeatLvl,
+    rx_sig_id_FRSeatHeatLvl,
+    rx_sig_id_ClstrDspdInfoMsk,
+    rx_sig_id_ClstrDspdAltrWrnng,
+    rx_sig_id_ClstrDspdTyrePrsSts,
+    rx_sig_id_ClstrDspdOilPrsLowWrnng,
+    rx_sig_id_ClstrDspdLBrkLghtWrnng,
+    rx_sig_id_ClstrDspdRBrkLghtWrnng,
+    rx_sig_id_ClstrDspdLDircnIndLghtWrnng,
+    rx_sig_id_ClstrDspdRDircnIndLghtWrnng,
+    rx_sig_id_ClstrDspdLDipdBeamLghtWrnng,
+    rx_sig_id_ClstrDspdRDipdBeamLghtWrnng,
+    rx_sig_id_ClstrDspdAdvFrtLghtngSysWrnng,
+    rx_sig_id_ClstrDspdSCSWrnng,
+    rx_sig_id_ClstrDspdTCSWrnng,
+    rx_sig_id_ClstrDspdABSWrnng,
+    rx_sig_id_ClstrDspdClntTemWrnng,
+    rx_sig_id_ClstrDspdBrkSysWrnng,
+    rx_sig_id_ClstrDspdEleclBrkDstrbutnWrnng,
+    rx_sig_id_ClstrDspdFuelSts,
+    rx_sig_id_ClstrDspdFuelSnsrWrnng,
+    rx_sig_id_ClstrDspdSpStWrnng,
+    rx_sig_id_ClstrDspdSpStBtnWrnng,
+    rx_sig_id_ClstrDspdHDCWrnng,
+    rx_sig_id_ClstrDspdSASWrnng,
+    rx_sig_id_ClstrDspdEPSWrnng,
+    rx_sig_id_StrgWhlAngSnsrCalSts,
+    rx_sig_id_ClstrDspdAirbagWrnng,
+    rx_sig_id_ClstrDspdInvdKeyWrnng,
+    rx_sig_id_ClstrDspdScurtKeyBatLowWrnng,
+    rx_sig_id_ClstrDspdClSwWrnng,
+    rx_sig_id_ClstrDspdHillHoldWrnng,
+    rx_sig_id_ClstrDspdAEBSysWrnng,
+    rx_sig_id_ClstrDspdIgnRelayWrnng,
+    rx_sig_id_ClstrDspdWshrFludLowWrnng,
+    rx_sig_id_ClstrDspdBatRplmntRqdWrnng,
+    rx_sig_id_ClstrDspdClOvhtdWrnng,
+    rx_sig_id_ClstrDspdPDCWrnng,
+    rx_sig_id_ClstrDspdTrWrnng,
+    rx_sig_id_ClstrDspdRrFogLghtWrnng,
+    rx_sig_id_ClstrDspdRevsLampWrnng,
+    rx_sig_id_ClstrDspdAutoholdWrnng,
+    rx_sig_id_ClstrDspdTCCMWrnng,
+    rx_sig_id_ClstrDspdPEWrnng,
+    rx_sig_id_ClstrDspdLDWSysFlt,
+    rx_sig_id_ClstrDspdACCSysWrnng,
+    rx_sig_id_ClstrDspdFVCMSnsrWrnng,
+    rx_sig_id_ScurtAlrmTrigd,
+    rx_sig_id_VehSpdAvgDrvn,
+    rx_sig_id_VehSpdAvgDrvnV,
+    rx_sig_id_EnSpd,
+    rx_sig_id_EnSpdSts,
+    rx_sig_id_TrShftLvrPos,
+    rx_sig_id_TrShftLvrPosV,
+    rx_sig_id_AccelActuPos,
+    rx_sig_id_AccelActuPosV,
+    rx_sig_id_BrkPdlPos,
+    rx_sig_id_StrgWhlAng,
+    rx_sig_id_CCA,
+    rx_sig_id_CCEnbd,
+    rx_sig_id_CrusAndSpdLmtrDrvrSS,
+    rx_sig_id_ACOnOffDspCmd,
+    rx_sig_id_ACAutoDspCmd,
+    rx_sig_id_ACDrvrAirMdDspCmd,
+    rx_sig_id_ACRcctnDspMd,
+    rx_sig_id_ACFrtBlwrSpdDspCmd,
+    rx_sig_id_ACDrvrTemDspCmd,
+    rx_sig_id_ACPsngTemDspCmd,
+    rx_sig_id_DrvrSbltAtcV,
+    rx_sig_id_DrvrSbltAtc,
+    rx_sig_id_FrtPsngSbltAtcV,
+    rx_sig_id_FrtPsngSbltAtc,
+    rx_sig_id_LDircnIO,
+    rx_sig_id_RDircnIO,
+    rx_sig_id_FrtFogLghtOn,
+    rx_sig_id_RrFogLghtOn,
+    rx_sig_id_FrtWiperSwSts,
+    rx_sig_id_FrtWiperOpReq,
+    rx_sig_id_AutoLghtOnReq,
+    rx_sig_id_EnClntTem,
+    rx_sig_id_HornSwA,
+    rx_sig_id_ClstrDspdMalfIndrLghtWrnng,
+    rx_sig_id_ClstrDspdEnDrvByWireW,
+    rx_sig_id_AirbagDpl,
+    rx_sig_id_AirbagDplInvsn,
+    rx_sig_id_vehDistRollCount,
+    rx_sig_id_ClstrDspdEleccParkngBW,
+    rx_sig_id_ClstrDspdCCWrnng,
+    rx_sig_id_ClstrDspdSpdAstSysW,
+    rx_sig_id_ClstrDspdLSideLghtW,
+    rx_sig_id_ClstrDspdRSideLghtW,
+    rx_sig_id_ClstrDspdDayTimeRLW,
+    rx_sig_id_ACAvlbly,
+    rx_sig_id_BCMAvlbly,
+    rx_sig_id_DHLAvlbly,
+    rx_sig_id_ECMAvlbly,
+    rx_sig_id_EPBAvlbly,
+    rx_sig_id_EPSAvlbly,
+    rx_sig_id_FICMAvlbly,
+    rx_sig_id_IPCAvlbly,
+    rx_sig_id_PDCAvlbly,
+    rx_sig_id_PEPSAvlbly,
+    rx_sig_id_PMDCAvlbly,
+    rx_sig_id_SASAvlbly,
+    rx_sig_id_SCSAvlbly,
+    rx_sig_id_SCUAvlbly,
+    rx_sig_id_SDMAvlbly,
+    rx_sig_id_TCCMAvlbly,
+    rx_sig_id_TCMAvlbly,
+    rx_sig_id_AvgFuelCsump,
+    rx_sig_id_AvgFuelCsumpV,
+
+    rx_sig_id_EPTISGMdReq,
+    rx_sig_id_EPTISGSpdReq,
+    rx_sig_id_EPTISGToqReq,
+    rx_sig_id_ElecMotEmgcShutDwn,
+    rx_sig_id_EPTHVEmgcPwrOffReq,
+    rx_sig_id_EPTMainRelayDrvReq,
+    rx_sig_id_EPTTMSpdReq,
+    rx_sig_id_EPTTMToqReq,
+    rx_sig_id_ISGSpd,
+    rx_sig_id_ISGSpdV,
+    rx_sig_id_ISGSta,
+    rx_sig_id_ISGActuToq,
+    rx_sig_id_ISGActuToqV,
+    rx_sig_id_ISGClntPumpPWMReq,
+    rx_sig_id_ISGAltngCircuitShrtCR,
+    rx_sig_id_TMSta,
+    rx_sig_id_TMActuToq,
+    rx_sig_id_TMActuToqV,
+    rx_sig_id_TMOvhtd,
+    rx_sig_id_TMToqDrtng,
+    rx_sig_id_ISGMaxAvlblToq,
+    rx_sig_id_ISGMaxAvlblToqV,
+    rx_sig_id_ISGMinAvlblToq,
+    rx_sig_id_ISGMinAvlblToqV,
+    rx_sig_id_TMMaxAvlblToq,
+    rx_sig_id_TMMaxAvlblToqV,
+    rx_sig_id_TMMinAvlblToq,
+    rx_sig_id_TMMinAvlblToqV,
+    rx_sig_id_TMAShrtCircuitRdy,
+    rx_sig_id_EPTBrkPdlDscrtInptSts,
+    rx_sig_id_EPTBrkPdlDscrtInptStsV,
+    rx_sig_id_EPTAccelActuPos,
+    rx_sig_id_EPTAccelActuPosV,
+    rx_sig_id_EPTFuelCutReq,
+    rx_sig_id_EPTEnFuelPumpOnReq,
+    rx_sig_id_MsfrDiagCtr,
+    rx_sig_id_HybEnFltSts,
+    rx_sig_id_SCUShifterFlr,
+    rx_sig_id_EnActuStdyStaToq_MSB,
+    rx_sig_id_EnActuStdyStaToq_LSB,
+    rx_sig_id_EnActuStdyStaToq,
+    rx_sig_id_EnActuStdyStaToqV,
+    rx_sig_id_EPTEnCrkshftToqFastReq,
+    rx_sig_id_EPTEnCrkshftToqSlowReq,
+    rx_sig_id_BMSCellMaxVol,
+    rx_sig_id_BMSCellMaxVolV,
+    rx_sig_id_BMSCellMinVol,
+    rx_sig_id_BMSCellMinVolV,
+    rx_sig_id_ABSIO,
+    rx_sig_id_VSESts,
+    rx_sig_id_TrEstdGear,
+    rx_sig_id_TrEstdGearV,
+    rx_sig_id_EPTRdy,
+    rx_sig_id_EPTRgtvBrkActuToq,
+    rx_sig_id_EPTRgtvBrkSysFlt,
+    rx_sig_id_AutocTrGearShftDircn,
+    rx_sig_id_EPBSwSts,
+    rx_sig_id_EPBSwStsV,
+    rx_sig_id_EPBAppcnSts,
+    rx_sig_id_EPBAppcnStsPV,
+    rx_sig_id_EPBSts,
+    rx_sig_id_BrkVacuumPumpSts,
+    rx_sig_id_BMSBalancingStatus,
+    rx_sig_id_BMSCrashCircuitStatus,
+    rx_sig_id_BMSOnbdChargerWakeup,
+    rx_sig_id_BMSVehicleWakeup,
+    rx_sig_id_BMSRelayStep,
+    rx_sig_id_BMSPreRelayStatus,
+    rx_sig_id_BMSPosRelayStatus,
+    rx_sig_id_BMSNegRelayStatus,
+    rx_sig_id_BMSChgRelayStatus,
+    rx_sig_id_BMSLVBatInput,
+    rx_sig_id_BMSPackCrnt,  // Battery Management System Pack Current
+    rx_sig_id_BMSPackCrntV, // Battery Management System Pack Current Validity
+    rx_sig_id_BMSPackSOC,   // Battery Management System Pack State Of Charge
+    rx_sig_id_BMSPackSOCV,  // Battery Management System Pack State Of Charge Validity
+    rx_sig_id_BMSPackVol,   // Battery Management System Pack Voltage
+    rx_sig_id_BMSPackVolV,  // Battery Management System Pack Voltage Validity
+    rx_sig_id_BMSPtIsltnRstc,   // Battery Management System Powertrain Isolation Resistance 
+    rx_sig_id_BMSPtIsltnRstcV,  // Battery Management System Powertrain Isolation Resistance Validity
+    rx_sig_id_BMSMainRelaySts,
+    rx_sig_id_BMSFltLvl,        // Battery Management System Fault Level
+    rx_sig_id_BMSCdstCtr,
+    rx_sig_id_BMSBscSta,        // Battery Management System Basic State
+    rx_sig_id_BMSHVILClsd,      // Battery Management System High Voltage Interlock Loop Closed
+    rx_sig_id_BMSCellMaxTem,    // Battery Management System Cell Maximum Temperature
+    rx_sig_id_BMSCellMaxTemV,   // Battery Management System Cell Maximum Temperature Validity
+    rx_sig_id_BMSCellMinTem,    // Battery Management System Cell Minimum Temperature
+    rx_sig_id_BMSCellMinTemV,   // Battery Management System Cell Minimum Temperature Validity
+    rx_sig_id_BMSClntTem,       // Battery Management System Coolant Temperature
+    rx_sig_id_VehElecRng,
+    rx_sig_id_BMSPumpSts,
+    rx_sig_id_BMSOnbdChrgrPlugOn,
+    rx_sig_id_WhlGndVelLDrvn,
+    rx_sig_id_WhlGndVelLDrvnV,
+    rx_sig_id_WhlGndVelRDrvn,
+    rx_sig_id_WhlGndVelRDrvnV,
+    rx_sig_id_WhlGndVelLNonDrvn,
+    rx_sig_id_WhlGndVelLNonDrvnV,
+    rx_sig_id_WhlGndVelRNonDrvn,
+    rx_sig_id_WhlGndVelRNonDrvnV,
+    rx_sig_id_VehSpdAvgNonDrvn,
+    rx_sig_id_VehSpdAvgNonDrvnV,
+    rx_sig_id_ElecVehSysMd,
+    rx_sig_id_EPTEDUClntTem,    // Electric Powertrain Electric Drive Unit Coolant Temperature
+    rx_sig_id_EPTFlt,           // Electric Powertrain Fault
+    rx_sig_id_EPTSysPwr,        // Electric Powertrain System Power
+    rx_sig_id_EPTHVDCDCMdReq,   // Electric Powertrain High Voltage Direct Current Direct Current Mode Request
+    rx_sig_id_TMSideClSts,      // Traction Motor Side Clutch Status
+    rx_sig_id_ISGSideClSts,     // Integrated Starter Generator Side Clutch Status
+    rx_sig_id_EPTEDUOilPrs,     // Electric Powertrain Electric Driver Unit Oil Pressure
+    rx_sig_id_ISGRtrTem,        // Integrated Starter Generator Rotor Temperature
+    rx_sig_id_ISGInvtrClntTem,  // Integrated Starter Generator Inverter Coolent Temperature
+    rx_sig_id_ISGOfstAng,       // Integrated Starter Generator Offset Angle
+    rx_sig_id_ISGOfstAngCalCnd, // Integrated Starter Generator Offset Angle Calibration Condition
+    rx_sig_id_ISGHVRdy,         // Integrated Starter Generator High Voltage Ready
+    rx_sig_id_TMRtrTem,      // Traction Motor Rotor Temperature
+    rx_sig_id_TMInvtrClntTem,// Traction Motor Inverter Coolant Temperature
+    rx_sig_id_TMOfstAng,     // Traction Motor Offset Angle
+    rx_sig_id_TMHVRdy,       // Traction Motor High Voltage Ready
+    rx_sig_id_TMImmoResult,  // Traction Motor Immobilizer Result
+    rx_sig_id_ISGInvtrTem,// Integrated Starter Generator Inverter Temperature
+    rx_sig_id_ISGSttrTem, // Integrated Starter Generator Stator Temperature
+    rx_sig_id_ISGHVInhd,  // Integrated Starter Generator High Voltage Inhibited
+    rx_sig_id_ISGFltIO,   // Integrated Starter Generator Fault Indication On
+    rx_sig_id_ISGOvhtd,   // Integrated Starter Generator Overheated
+    rx_sig_id_ISGToqDrtng,// Integrated Starter Generator Torque Derating
+    rx_sig_id_ISGFlr1, // Integrated Starter Generator Failure 1
+    rx_sig_id_ISGFlr2, // Integrated Starter Generator Failure 2
+    rx_sig_id_ISGFlr3, // Integrated Starter Generator Failure 3
+    rx_sig_id_ISGFlr4, // Integrated Starter Generator Failure 4
+    rx_sig_id_ISGFlr5, // Integrated Starter Generator Failure 5
+    rx_sig_id_ISGFlr6, // Integrated Starter Generator Failure 6
+    rx_sig_id_ISGFlr7, // Integrated Starter Generator Failure 7
+    rx_sig_id_ISGFlr8, // Integrated Starter Generator Failure 8
+    rx_sig_id_TMInvtrTem,       // Traction Motor Inverter Temperature
+    rx_sig_id_TMSttrTem,        // Traction Motor Stator Temperature
+    rx_sig_id_TMHVInhd,         // Traction Motor High Voltage Inhibited
+    rx_sig_id_TMFltIO,          // Traction Motor Fault Indication On
+    rx_sig_id_TMClntPumpSts,    // Traction Motor Coolant Pump Status
+    rx_sig_id_PEBClntPumpOnReq, // Power Electric Box Coolant Pump On Request
+    rx_sig_id_HVDCDCSta,        // High Voltage Direct Current Direct Current State
+    rx_sig_id_HVDCDCHVSideVol,  // High Voltage Direct Current Direct Current High Voltage Side Voltage
+    rx_sig_id_HVDCDCHVSideVolV, // High Voltage Direct Current Direct Current High Voltage Side Voltage Validity
+    rx_sig_id_HVDCDCLVSideVol,  // High Voltage Direct Current Direct Current Low Voltage Side Voltage
+    rx_sig_id_HVDCDCLVSideVolV, // High Voltage Direct Current Direct Current Low Voltage Side Voltage Validity
+    rx_sig_id_HVDCDCLVSideCrnt, // High Voltage Direct Current Direct Current Low Voltage Side Current
+    rx_sig_id_HVDCDCLVSideCrntV,// High Voltage Direct Current Direct Current Low Voltage Side Current Validity
+    rx_sig_id_HVDCDCHVSideCrnt, // High Voltage Direct Current Direct Current High Voltage Side Current
+    rx_sig_id_HVDCDCHdwrFlr,         // High Voltage Direct Current Direct Current Hardware Failure
+    rx_sig_id_HVDCDCIntnlFlr,        // High Voltage Direct Current Direct Current Internal Failure
+    rx_sig_id_HVDCDCOverHtd,         // High Voltage Direct Current Direct Current Over Heated
+    rx_sig_id_HVDCDCTem,             // High Voltage Direct Current Direct Current Temperature
+    rx_sig_id_HVDCDCLVSideStptFdbk,  // High Voltage Direct Current Direct Current Low Voltage Side Setpoint Feedback
+    rx_sig_id_HVDCDCLVSideStptFdbkV, // High Voltage Direct Current Direct Current Low Voltage Side Setpoint Feedback Validity 
+    rx_sig_id_TMFlr1, // Traction Motor Failure 1
+    rx_sig_id_TMFlr2, // Traction Motor Failure 2
+    rx_sig_id_TMFlr3, // Traction Motor Failure 3
+    rx_sig_id_TMFlr4, // Traction Motor Failure 4
+    rx_sig_id_TMFlr5, // Traction Motor Failure 5
+    rx_sig_id_TMFlr6, // Traction Motor Failure 6
+    rx_sig_id_TMFlr7, // Traction Motor Failure 7
+    rx_sig_id_TMFlr8, // Traction Motor Failure 8
+    rx_sig_id_BMSAvlblEnrg,  // Battery Management System Available Energy
+    rx_sig_id_BMSPackSOCDsp, // SOC displayed for customer
+    rx_sig_id_ChargerStatus,        // charger status
+    rx_sig_id_ChargerFanStatus,     // Charger Cooling Fan Status
+    rx_sig_id_ChargerHVRelayStatus, // Charger HV Relay Status
+    rx_sig_id_ChargerHVVolt,
+    rx_sig_id_ChargerWakeUp,        // Charger Wake up
+    rx_sig_id_ChargerHVCurrent,
+    rx_sig_id_EnNonEmsnRltdMalfA, // Engine Non Emissions Related Malfunction Active
+    rx_sig_id_EnEmsnRltdMalfA,    // Engine Emissions Related Malfunction Active
+    rx_sig_id_wake_network_BMS,
+    rx_sig_id_keep_network_BMS,
+    rx_sig_id_EnOilPrsLowIO, // Engine Oil Pressure Low Indication On
+    rx_sig_id_EnOilChngIO,   // Engine Oil Change Indication On
+    rx_sig_id_EnOilPrs,      // Engine Oil Pressure
+    rx_sig_id_EPTTMMdReq,
+    rx_sig_id_EPTHVEmgcpwrOffReq,   // Electric Powertrain High Voltage Emergency Power Off Request
+    rx_sig_id_TMSpd,    // Traction Motor Speed
+    rx_sig_id_TMSpdV,   // Traction Motor Speed Validity
+    rx_sig_id_EPTTMMaxToqLmt,
+    rx_sig_id_EPTTMMinToqLmt,
+    rx_sig_id_InsdAirPrtclMtrCDC,
+    rx_sig_id_OtsdAirPrtclMtrCDC,
+    rx_sig_id_RmtAirClnrA,          // Remote Air Cleaner Active
+    rx_sig_id_RmtAirClnrAbotRsn,
+    rx_sig_id_AirClnrFltrLife,
+    rx_sig_id_AirClnrFltrLifeV,
+    rx_sig_id_AirClnrIonizerDspCmd,
+    rx_sig_id_BMSChrgStsIO,             // Battery Management System Charge Status Indication On
+    rx_sig_id_BMSChrgSts,               // Battery Management System Charge Status
+    rx_sig_id_BMSConIndDriverStat,      // Connect indication driver status
+    rx_sig_id_ClstrDspdSASUncalWrnng,   // Cluster Displayed Steering Angle Sensor Uncalibartion Warning
+    rx_sig_id_ClstrElecRngToEPT,    // Cluster Electric Range To Empty
+    rx_sig_id_ClstrFuelRngToEPT,    // Cluster Fuel Range To Empty
+    
+    // add for ip34 by sy
+    rx_sig_id_ACComprActuPwr,
+    rx_sig_id_ACDualDspCmd,
+    rx_sig_id_ACPsngAirMdDspCmd,
+    rx_sig_id_HVBatCoolngSysEnbd,
+    rx_sig_id_VINBCM,
+    rx_sig_id_BrkFludLvlLow,
+    rx_sig_id_BrkFludLvlLowV,
+    rx_sig_id_DimLghtLvl,
+    rx_sig_id_LghtSwPosSts,
+    rx_sig_id_MainBeamSwPosSts,
+    rx_sig_id_VehInertiaSwTrigd,
+    rx_sig_id_DrvrWndDclnSpc,
+    rx_sig_id_FrtPsngWndDclnSpc,
+    rx_sig_id_RLWndDclnSpc,
+    rx_sig_id_RRWndDclnSpc,
+    rx_sig_id_ClstrDspdVehSpd,
+    rx_sig_id_EPTStCmdOn,
+    rx_sig_id_ParkBrkSwA,
+    rx_sig_id_SCUParkActrSts,
+    rx_sig_id_EnEmsnRltdMalfIndReq,
+    rx_sig_id_BarPrsAbsV,
+    rx_sig_id_EnClntTemV,
+    rx_sig_id_FVCMAvlbly,
+    rx_sig_id_HCUAvlbly,
+    rx_sig_id_BPMMstrAvlbly,
+    rx_sig_id_PwrMdMstrAccryA,
+    rx_sig_id_PwrMdMstrRunCrkA,
+    rx_sig_id_SysOpnlMd,
+
+
+    rx_sig_id_VehOdoV,
+    rx_sig_id_OtsdAirTemCrValV,
+    //rx_sig_id_OtsdAirTemCrVal,
+    rx_sig_id_NRCDMvDist,
+    rx_sig_id_NRCDReqAbotdRsn,
+    rx_sig_id_NRCDSts,
+    rx_sig_id_ACCAEBBrkJerkLvlReq,
+    rx_sig_id_ACCAEBDrvrTkovReq,
+    rx_sig_id_ACCDetObjDistLvl,
+    rx_sig_id_ACCDrvrSeldTrgtDistLvl,
+    rx_sig_id_ACCDrvrSelTrgtSpd,
+    rx_sig_id_ACCObjDet,
+    rx_sig_id_ACCSdslReq,
+    rx_sig_id_ACCSysCanclReq,
+    rx_sig_id_ACCSysFltSts,
+    rx_sig_id_ACCSysSts,
+    rx_sig_id_AEBSysFltSts,
+    rx_sig_id_AEBSysSts, 
+    rx_sig_id_FCWrnngSts,  
+    rx_sig_id_FCWSnstvtLvl,
+    rx_sig_id_FVCMBlkd,
+    rx_sig_id_LDWSnstvtLvl,
+    rx_sig_id_LDWSysFltSts,
+    rx_sig_id_LDWSysSts,
+    rx_sig_id_LDWWrnngIndReq,
+    rx_sig_id_AirbagWrnngIndF,
+    rx_sig_id_FuelTotCapct,
+    rx_sig_id_OdoPriy,
+    rx_sig_id_CalendarDay,
+    rx_sig_id_CalendarMonth,
+    rx_sig_id_CalendarYear,
+    rx_sig_id_HourOfDay,
+    rx_sig_id_MinuteOfHour,
+    rx_sig_id_SecsOfMinute,
+    rx_sig_id_FLObsRng,  
+    rx_sig_id_FRObsRng,
+    rx_sig_id_FrtMidLObsRng,
+    rx_sig_id_FrtMidRObsRng,
+    rx_sig_id_FrtObsDist, 
+    rx_sig_id_RLObsRng,
+    rx_sig_id_RrMidLObsRng,
+    rx_sig_id_RrMidRObsRng,
+    rx_sig_id_RrObsDist,
+    rx_sig_id_RRObsRng,
+    rx_sig_id_StrgWhlAngV,
+    rx_sig_id_ABSA,
+    rx_sig_id_AirbagSysFlt,
+    rx_sig_id_SDMRC,
+    rx_sig_id_TCSA,
+    rx_sig_id_VehCrshTyp,
+    rx_sig_id_VehDynYawRate,
+    rx_sig_id_VehSpdAvg,
+    rx_sig_id_VehSpdAvgV,
+    rx_sig_id_VSELatAcc,
+    rx_sig_id_VSELongtAcc,
+    rx_sig_id_VehCofignAC,
+    rx_sig_id_VehCofignBodyCtrlrTyp,
+    rx_sig_id_VehCofignCCTyp,
+    rx_sig_id_VehCofignEnTyp,
+    rx_sig_id_VehCofignHybLvl,
+    rx_sig_id_VehCofignInftnTyp,
+    rx_sig_id_VehCofignParkngBrkTyp,
+    rx_sig_id_VehCofignSlipCtrlTyp,
+    rx_sig_id_VehCofignSpSt,
+    rx_sig_id_VehCofignSta,
+    rx_sig_id_VehCofignStrgTyp,
+    rx_sig_id_VehCofignTPMSTyp,
+    rx_sig_id_VehCofignTrnsfCaseTyp,
+    rx_sig_id_VehCofignTrTyp,
+    rx_sig_id_VehInfoBodyTyp,
+    rx_sig_id_VehInfoBrand,
+    rx_sig_id_VehInfoDrvHadlTyp,
+    rx_sig_id_VehInfoEmsnRegn,
+    rx_sig_id_VehInfoMdlYear,
+    rx_sig_id_VehInfoMkt,
+    rx_sig_id_VehInfoPf,
+    rx_sig_id_BMSClntPumpSts,
+    rx_sig_id_BMSOnbdChargerPlugOn,
+    
+    // add for Reserve Charge Subsystem, 2016-06-30
+    rx_sig_id_BMSReserPushItem,
+    rx_sig_id_BMSChrgRmnHour,
+    rx_sig_id_BMSChrgRmnMinute,
+    rx_sig_id_BMSReserChrgCtrlDspCmd,
+    rx_sig_id_BMSReserFltReason,
+    rx_sig_id_BMSReserChrgFltReason,
+    rx_sig_id_BMSReserStaDspCmd,
+    rx_sig_id_BMSReserStHourDspCmd,
+    rx_sig_id_BMSReserStMinuteDspCmd,
+    rx_sig_id_BMSReserStDurtnTimeDspCmd,
+    rx_sig_id_BMSReserMaxCrntDspCmd,
+    rx_sig_id_BMSReserChrgFrqcDspCmd,
+    rx_sig_id_BMSReserChrgMdDspCmd,
+    rx_sig_id_BMSReserDurtnTimeDspCmd,
+    rx_sig_id_BMSReserChrgEnrgDspCmd,
+    rx_sig_id_BMSReserChrgRngDspCmd,
+    rx_sig_id_BMSReserTrgtSOCDspCmd,
+    rx_sig_id_BMSReserChrgRespV,
+    
+    rx_sig_id_ChrgngRmnngTimeV,
+    rx_sig_id_ChrgngRmnngTime,
+    
+    rx_sig_id_ChargeCurrent,
+    rx_sig_id_ChargerEnable,

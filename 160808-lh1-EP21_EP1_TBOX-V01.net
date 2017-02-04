@@ -1,0 +1,4564 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                    Mentor Graphics Corporation                             */
+/*                        All rights reserved                                 */
+/*                                                                            */
+/* ************************************************************************** */
+/*                                                                            */
+/*  Description:   Network file for Volcano 6.2                               */
+/*  Project:       EP21                                                       */
+/*  Release:       EP21_EP1_V01                                               */
+/*  Configuration: base                                                       */
+/*  Node:          TBOX                                                       */
+/*                                                                            */
+/* ************************************************************************** */
+
+
+
+network_file;
+volcano version "6.2";
+
+/* Frames */
+
+/* TBOX_HSC5 */
+/* TBOX_ifc0 */
+
+/* Received Frames */
+signal frame DIAG_DTCInfo_GW {
+	received;
+	/* identifier = 0x7B0; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS5 */
+	/* period = 995 ms; */
+	frame size 7 bytes;
+	dlc_check_mode permissive;
+	endianness big;
+	signal DTCInfomationGWHSC5 {
+		type bytes;
+		size 7 bytes;
+		offset 0 bits;
+	}
+}
+signal frame GW_DIAG_DTCInfo_AC {
+	received;
+	/* identifier = 0x708; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS5 */
+	/* period = 965 ms; */
+	/* FM_Quiet_HS5 */
+	/* period = 965 ms; */
+	/* FM_Silent_HS5 */
+	/* period = 965 ms; */
+	frame size 7 bytes;
+	dlc_check_mode permissive;
+	endianness big;
+	signal DTCInfomationACHSC5 {
+		type bytes;
+		size 7 bytes;
+		offset 0 bits;
+	}
+}
+signal frame GW_DIAG_DTCInfo_AFS {
+	received;
+	/* identifier = 0x7B4; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	frame size 7 bytes;
+	dlc_check_mode permissive;
+	endianness big;
+	signal DTCInfomationAFSHSC5 {
+		type bytes;
+		size 7 bytes;
+		offset 0 bits;
+	}
+}
+signal frame GW_DIAG_DTCInfo_APA {
+	received;
+	/* identifier = 0x799; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	frame size 7 bytes;
+	dlc_check_mode permissive;
+	endianness big;
+	signal DTCInfomationAPAHSC5 {
+		type bytes;
+		size 7 bytes;
+		offset 0 bits;
+	}
+}
+signal frame GW_DIAG_DTCInfo_BCM {
+	received;
+	/* identifier = 0x7B1; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS5 */
+	/* period = 965 ms; */
+	/* FM_Quiet_HS5 */
+	/* period = 965 ms; */
+	/* FM_Silent_HS5 */
+	/* period = 965 ms; */
+	frame size 7 bytes;
+	dlc_check_mode permissive;
+	endianness big;
+	signal DTCInfomationBCMHSC5 {
+		type bytes;
+		size 7 bytes;
+		offset 0 bits;
+	}
+}
+signal frame GW_DIAG_DTCInfo_BMS {
+	received;
+	/* identifier = 0x70B; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS5 */
+	/* period = 955 ms; */
+	/* FM_Quiet_HS5 */
+	/* period = 955 ms; */
+	/* FM_Silent_HS5 */
+	/* period = 955 ms; */
+	frame size 7 bytes;
+	dlc_check_mode permissive;
+	endianness big;
+	signal DTCInfomationBMSHSC5 {
+		type bytes;
+		size 7 bytes;
+		offset 0 bits;
+	}
+}
+signal frame GW_DIAG_DTCInfo_EHBS {
+	received;
+	/* identifier = 0x796; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	frame size 7 bytes;
+	dlc_check_mode permissive;
+	endianness big;
+	signal DTCInfomationEHBSHSC5 {
+		type bytes;
+		size 7 bytes;
+		offset 0 bits;
+	}
+}
+signal frame GW_DIAG_DTCInfo_EPB {
+	received;
+	/* identifier = 0x793; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	frame size 7 bytes;
+	dlc_check_mode permissive;
+	endianness big;
+	signal DTCInfomationEPBHSC5 {
+		type bytes;
+		size 7 bytes;
+		offset 0 bits;
+	}
+}
+signal frame GW_DIAG_DTCInfo_EPS {
+	received;
+	/* identifier = 0x791; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	frame size 7 bytes;
+	dlc_check_mode permissive;
+	endianness big;
+	signal DTCInfomationEPSHSC5 {
+		type bytes;
+		size 7 bytes;
+		offset 0 bits;
+	}
+}
+signal frame GW_DIAG_DTCInfo_FICM {
+	received;
+	/* identifier = 0x7B9; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	frame size 7 bytes;
+	dlc_check_mode permissive;
+	endianness big;
+	signal DTCInfomationFICMHSC5 {
+		type bytes;
+		size 7 bytes;
+		offset 0 bits;
+	}
+}
+signal frame GW_DIAG_DTCInfo_FVCM {
+	received;
+	/* identifier = 0x79B; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	frame size 7 bytes;
+	dlc_check_mode permissive;
+	endianness big;
+	signal DTCInfomationFVCMHSC5 {
+		type bytes;
+		size 7 bytes;
+		offset 0 bits;
+	}
+}
+signal frame GW_DIAG_DTCInfo_HCU {
+	received;
+	/* identifier = 0x70A; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS5 */
+	/* period = 955 ms; */
+	/* FM_Quiet_HS5 */
+	/* period = 955 ms; */
+	/* FM_Silent_HS5 */
+	/* period = 955 ms; */
+	frame size 7 bytes;
+	dlc_check_mode permissive;
+	endianness big;
+	signal DTCInfomationHCUHSC5 {
+		type bytes;
+		size 7 bytes;
+		offset 0 bits;
+	}
+}
+signal frame GW_DIAG_DTCInfo_HVDCDC {
+	received;
+	/* identifier = 0x70F; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS5 */
+	/* period = 945 ms; */
+	/* FM_Quiet_HS5 */
+	/* period = 945 ms; */
+	/* FM_Silent_HS5 */
+	/* period = 945 ms; */
+	frame size 7 bytes;
+	dlc_check_mode permissive;
+	endianness big;
+	signal DTCInfomationHVDCDCHSC5 {
+		type bytes;
+		size 7 bytes;
+		offset 0 bits;
+	}
+}
+signal frame GW_DIAG_DTCInfo_IPK {
+	received;
+	/* identifier = 0x7B8; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	frame size 7 bytes;
+	dlc_check_mode permissive;
+	endianness big;
+	signal DTCInfomationIPKHSC5 {
+		type bytes;
+		size 7 bytes;
+		offset 0 bits;
+	}
+}
+signal frame GW_DIAG_DTCInfo_ISC {
+	received;
+	/* identifier = 0x70D; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS5 */
+	/* period = 955 ms; */
+	/* FM_Quiet_HS5 */
+	/* period = 955 ms; */
+	/* FM_Silent_HS5 */
+	/* period = 955 ms; */
+	frame size 7 bytes;
+	dlc_check_mode permissive;
+	endianness big;
+	signal DTCInfomationISCHSC5 {
+		type bytes;
+		size 7 bytes;
+		offset 0 bits;
+	}
+}
+signal frame GW_DIAG_DTCInfo_MSM {
+	received;
+	/* identifier = 0x7B6; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS5 */
+	/* period = 965 ms; */
+	/* FM_Quiet_HS5 */
+	/* period = 965 ms; */
+	/* FM_Silent_HS5 */
+	/* period = 965 ms; */
+	frame size 7 bytes;
+	dlc_check_mode permissive;
+	endianness big;
+	signal DTCInfomationMSMHSC5 {
+		type bytes;
+		size 7 bytes;
+		offset 0 bits;
+	}
+}
+signal frame GW_DIAG_DTCInfo_PACM {
+	received;
+	/* identifier = 0x7BA; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	frame size 7 bytes;
+	dlc_check_mode permissive;
+	endianness big;
+	signal DTCInfomationPACMHSC5 {
+		type bytes;
+		size 7 bytes;
+		offset 0 bits;
+	}
+}
+signal frame GW_DIAG_DTCInfo_PEPS {
+	received;
+	/* identifier = 0x7B5; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS5 */
+	/* period = 965 ms; */
+	/* FM_Quiet_HS5 */
+	/* period = 965 ms; */
+	/* FM_Silent_HS5 */
+	/* period = 965 ms; */
+	frame size 7 bytes;
+	dlc_check_mode permissive;
+	endianness big;
+	signal DTCInfomationPEPSHSC5 {
+		type bytes;
+		size 7 bytes;
+		offset 0 bits;
+	}
+}
+signal frame GW_DIAG_DTCInfo_PLCM {
+	received;
+	/* identifier = 0x7BF; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS5 */
+	/* period = 975 ms; */
+	/* FM_Quiet_HS5 */
+	/* period = 975 ms; */
+	/* FM_Silent_HS5 */
+	/* period = 975 ms; */
+	frame size 7 bytes;
+	dlc_check_mode permissive;
+	endianness big;
+	signal DTCInfomationPLCMHSC5 {
+		type bytes;
+		size 7 bytes;
+		offset 0 bits;
+	}
+}
+signal frame GW_DIAG_DTCInfo_RDA {
+	received;
+	/* identifier = 0x79A; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	frame size 7 bytes;
+	dlc_check_mode permissive;
+	endianness big;
+	signal DTCInfomationRDAHSC5 {
+		type bytes;
+		size 7 bytes;
+		offset 0 bits;
+	}
+}
+signal frame GW_DIAG_DTCInfo_SAS {
+	received;
+	/* identifier = 0x792; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	frame size 7 bytes;
+	dlc_check_mode permissive;
+	endianness big;
+	signal DTCInfomationSASHSC5 {
+		type bytes;
+		size 7 bytes;
+		offset 0 bits;
+	}
+}
+signal frame GW_DIAG_DTCInfo_SCS {
+	received;
+	/* identifier = 0x790; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	frame size 7 bytes;
+	dlc_check_mode permissive;
+	endianness big;
+	signal DTCInfomationSCSHSC5 {
+		type bytes;
+		size 7 bytes;
+		offset 0 bits;
+	}
+}
+signal frame GW_DIAG_DTCInfo_SCU {
+	received;
+	/* identifier = 0x702; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS5 */
+	/* period = 955 ms; */
+	/* FM_Quiet_HS5 */
+	/* period = 955 ms; */
+	/* FM_Silent_HS5 */
+	/* period = 955 ms; */
+	frame size 7 bytes;
+	dlc_check_mode permissive;
+	endianness big;
+	signal DTCInfomationSCUHSC5 {
+		type bytes;
+		size 7 bytes;
+		offset 0 bits;
+	}
+}
+signal frame GW_DIAG_DTCInfo_SDM {
+	received;
+	/* identifier = 0x798; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS5 */
+	/* period = 950 ms; */
+	/* FM_Quiet_HS5 */
+	/* period = 950 ms; */
+	/* FM_Silent_HS5 */
+	/* period = 950 ms; */
+	frame size 7 bytes;
+	dlc_check_mode permissive;
+	endianness big;
+	signal DTCInfomationSDMHSC5 {
+		type bytes;
+		size 7 bytes;
+		offset 0 bits;
+	}
+}
+signal frame GW_DIAG_DTCInfo_TC {
+	received;
+	/* identifier = 0x70C; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS5 */
+	/* period = 955 ms; */
+	/* FM_Quiet_HS5 */
+	/* period = 955 ms; */
+	/* FM_Silent_HS5 */
+	/* period = 955 ms; */
+	frame size 7 bytes;
+	dlc_check_mode permissive;
+	endianness big;
+	signal DTCInfomationTCHSC5 {
+		type bytes;
+		size 7 bytes;
+		offset 0 bits;
+	}
+}
+signal frame GW_DIAG_DTCInfo_TPMS {
+	received;
+	/* identifier = 0x794; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	frame size 7 bytes;
+	dlc_check_mode permissive;
+	endianness big;
+	signal DTCInfomationTPMSHSC5 {
+		type bytes;
+		size 7 bytes;
+		offset 0 bits;
+	}
+}
+signal frame GW_HSC5_AC_FrP01 {
+	received;
+	/* identifier = 0x361; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS5 */
+	/* period = 100 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal ACInCarTemHSC5 {
+		type unsigned;
+		size 8 bits;
+		offset 0 bits;
+	}
+	signal RmtACAbotRsnHSC5 {
+		type unsigned;
+		size 4 bits;
+		offset 40 bits;
+	}
+	signal RmtACStsHSC5 {
+		type unsigned;
+		size 3 bits;
+		offset 8 bits;
+	}
+}
+signal frame GW_HSC5_AC_FrP08 {
+	received;
+	/* identifier = 0x2FB; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS5 */
+	/* period = 50 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal AirClnrFltrLifeHSC5 {
+		type unsigned;
+		size 8 bits;
+		offset 24 bits;
+	}
+	signal AirClnrFltrLifeVHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 32 bits;
+	}
+	signal RmtAirClnrAHSC5 {
+		type boolean;
+		size 1 bits;
+		offset 33 bits;
+	}
+	signal RmtAirClnrAbotRsnHSC5 {
+		type unsigned;
+		size 4 bits;
+		offset 34 bits;
+	}
+}
+signal frame GW_HSC5_BCM_FrP02 {
+	received;
+	/* identifier = 0x473; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS5 */
+	/* period = 200 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal VINBCMHSC5 {
+		type bytes;
+		size 8 bytes;
+		offset 0 bits;
+	}
+}
+signal frame GW_HSC5_BCM_FrP04 {
+	received;
+	/* identifier = 0x46A; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS5 */
+	/* period = 50 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal AutoLghtOnReqHSC5 {
+		type boolean;
+		size 1 bits;
+		offset 2 bits;
+	}
+	signal BntOpenStsHSC5 {
+		type unsigned;
+		size 2 bits;
+		offset 20 bits;
+	}
+	signal DimLghtLvlHSC5 {
+		type unsigned;
+		size 8 bits;
+		offset 32 bits;
+	}
+	signal DipdBeamLghtOnHSC5 {
+		type boolean;
+		size 1 bits;
+		offset 7 bits;
+	}
+	signal DrvrDoorOpenStsHSC5 {
+		type unsigned;
+		size 2 bits;
+		offset 22 bits;
+	}
+	signal FrtFogLghtOnHSC5 {
+		type boolean;
+		size 1 bits;
+		offset 6 bits;
+	}
+	signal FrtPsngDoorOpenStsHSC5 {
+		type unsigned;
+		size 2 bits;
+		offset 18 bits;
+	}
+	signal HornSwAHSC5 {
+		type boolean;
+		size 1 bits;
+		offset 1 bits;
+	}
+	signal LDircnIOHSC5 {
+		type boolean;
+		size 1 bits;
+		offset 29 bits;
+	}
+	signal LdspcOpenStsHSC5 {
+		type unsigned;
+		size 2 bits;
+		offset 24 bits;
+	}
+	signal LghtSwPosStsHSC5 {
+		type unsigned;
+		size 3 bits;
+		offset 48 bits;
+	}
+	signal MainBeamLghtOnHSC5 {
+		type boolean;
+		size 1 bits;
+		offset 28 bits;
+	}
+	signal MainBeamSwPosStsHSC5 {
+		type unsigned;
+		size 2 bits;
+		offset 46 bits;
+	}
+	signal RDircnIOHSC5 {
+		type boolean;
+		size 1 bits;
+		offset 30 bits;
+	}
+	signal RLDoorOpenStsHSC5 {
+		type unsigned;
+		size 2 bits;
+		offset 9 bits;
+	}
+	signal RRDoorOpenStsHSC5 {
+		type unsigned;
+		size 2 bits;
+		offset 16 bits;
+	}
+	signal RrFogLghtOnHSC5 {
+		type boolean;
+		size 1 bits;
+		offset 31 bits;
+	}
+	signal ScurtAlrmStsHSC5 {
+		type unsigned;
+		size 3 bits;
+		offset 40 bits;
+	}
+	signal ScurtAlrmTrigdHSC5 {
+		type boolean;
+		size 1 bits;
+		offset 0 bits;
+	}
+	signal VehLckngStaHSC5 {
+		type unsigned;
+		size 3 bits;
+		offset 13 bits;
+	}
+	signal VehSideLghtStsHSC5 {
+		type unsigned;
+		size 2 bits;
+		offset 11 bits;
+	}
+}
+signal frame GW_HSC5_BCM_FrP09 {
+	received;
+	/* identifier = 0x21D; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS5 */
+	/* period = 50 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal RVSStsHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 63 bits;
+	}
+}
+signal frame GW_HSC5_BCM_FrP10 {
+	received;
+	/* identifier = 0x518; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS5 */
+	/* period = 1000 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal KeyRefcHSC5 {
+		type unsigned;
+		size 16 bits;
+		offset 16 bits;
+	}
+}
+signal frame GW_HSC5_BCM_FrS09 {
+	received;
+	/* identifier = 0x03C; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS5 */
+	/* period = 5 ms; */
+	/* FM_Quiet_HS5 */
+	/* period = 5 ms; */
+	/* FM_Silent_HS5 */
+	/* period = 5 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal BCMImmoData4HSC5 {
+		type bytes;
+		size 8 bytes;
+		offset 0 bits;
+	}
+}
+signal frame GW_HSC5_BCM_FrS10 {
+	received;
+	/* identifier = 0x03D; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS5 */
+	/* period = 5 ms; */
+	/* FM_Quiet_HS5 */
+	/* period = 5 ms; */
+	/* FM_Silent_HS5 */
+	/* period = 5 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal BCMImmoData5HSC5 {
+		type bytes;
+		size 8 bytes;
+		offset 0 bits;
+	}
+}
+signal frame GW_HSC5_BCM_FrS13 {
+	received;
+	/* identifier = 0x021; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS5 */
+	/* period = 135 ms; */
+	/* FM_Quiet_HS5 */
+	/* period = 135 ms; */
+	/* FM_Silent_HS5 */
+	/* period = 135 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal BCMRmtCtrlPotclHSC5 {
+		type bytes;
+		size 8 bytes;
+		offset 0 bits;
+	}
+}
+signal frame GW_HSC5_ECM_FrP00 {
+	received;
+	/* identifier = 0x0C9; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS5 */
+	/* period = 10 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal ClstrDspdVehSpdHSC5 {
+		type unsigned;
+		size 8 bits;
+		offset 0 bits;
+	}
+	signal EPTAccelActuPosHSC5 {
+		type unsigned;
+		size 8 bits;
+		offset 8 bits;
+	}
+	signal EPTBrkPdlDscrtInptStsHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 29 bits;
+	}
+	signal EPTStCmdOnHSC5 {
+		type boolean;
+		size 1 bits;
+		offset 47 bits;
+	}
+}
+signal frame GW_HSC5_ECM_FrP04 {
+	received;
+	/* identifier = 0x194; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS5 */
+	/* period = 25 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal EPTRdyHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 63 bits;
+	}
+	signal FasnDrvrSbltIndCmdHSC5 {
+		type unsigned;
+		size 2 bits;
+		offset 2 bits;
+	}
+	signal FasnFrtPsngSbltIndCmdHSC5 {
+		type unsigned;
+		size 2 bits;
+		offset 0 bits;
+	}
+}
+signal frame GW_HSC5_FICM_FrP12 {
+	received;
+	/* identifier = 0x367; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS5 */
+	/* period = 100 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal BMSAvlblEnrgHSC5 {
+		type unsigned;
+		size 8 bits;
+		offset 24 bits;
+	}
+	signal HVDCDCHdwrFlrHSC5 {
+		type boolean;
+		size 1 bits;
+		offset 23 bits;
+	}
+	signal HVDCDCIntnlFlrHSC5 {
+		type boolean;
+		size 1 bits;
+		offset 22 bits;
+	}
+	signal HVDCDCOverHtdHSC5 {
+		type boolean;
+		size 1 bits;
+		offset 21 bits;
+	}
+	signal MSMFLSeatHeatLvlHSC5 {
+		type unsigned;
+		size 2 bits;
+		offset 16 bits;
+	}
+	signal MSMFRSeatHeatLvlHSC5 {
+		type unsigned;
+		size 2 bits;
+		offset 18 bits;
+	}
+	signal MSMRmtSeatHeatFlrRsnHSC5 {
+		type unsigned;
+		size 4 bits;
+		offset 12 bits;
+	}
+	signal MSMRmtSeatHeatStsHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 20 bits;
+	}
+	signal RmnDrvngDistHSC5 {
+		type unsigned;
+		size 12 bits;
+		offset 0 bits;
+	}
+}
+signal frame GW_HSC5_FrP01 {
+	received;
+	/* identifier = 0x1F1; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS5 */
+	/* period = 20 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal PwrMdMstrAccryA_h5HSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 58 bits;
+	}
+	signal PwrMdMstrRunCrkA_h5HSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 59 bits;
+	}
+	signal SysOpnlMd_h5HSC5 {
+		type unsigned;
+		size 3 bits;
+		offset 60 bits;
+	}
+	signal SysPwrMd_h5HSC5 {
+		type unsigned;
+		size 2 bits;
+		offset 56 bits;
+	}
+	signal SysVolMd_h5HSC5 {
+		type unsigned;
+		size 2 bits;
+		offset 1 bits;
+	}
+	signal SysVolV_h5HSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 24 bits;
+	}
+	signal SysVol_h5HSC5 {
+		type unsigned;
+		size 8 bits;
+		offset 16 bits;
+	}
+}
+signal frame GW_HSC5_FrP02 {
+	received;
+	/* identifier = 0x0F1; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS5 */
+	/* period = 10 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal BrkPdlPos_h5HSC5 {
+		type unsigned;
+		size 8 bits;
+		offset 48 bits;
+	}
+}
+signal frame GW_HSC5_FrP05 {
+	received;
+	/* identifier = 0x1F2; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS5 */
+	/* period = 20 ms; */
+	/* offset = 0 ms; */
+	frame size 2 bytes;
+	dlc_check_mode permissive;
+	endianness big;
+	signal SysBPMHSC5 {
+		type unsigned;
+		size 2 bits;
+		offset 12 bits;
+	}
+	signal SysBPMEnbdHSC5 {
+		type boolean;
+		size 1 bits;
+		offset 14 bits;
+	}
+}
+signal frame GW_HSC5_FrP10 {
+	received;
+	/* identifier = 0x3F1; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS5 */
+	/* period = 250 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal OtsdAirTemCrValV_h5HSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 8 bits;
+	}
+	signal OtsdAirTemCrVal_h5HSC5 {
+		type unsigned;
+		size 8 bits;
+		offset 0 bits;
+	}
+}
+signal frame GW_HSC5_IPK_FrP03 {
+	received;
+	/* identifier = 0x416; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS5 */
+	/* period = 200 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal ClstrElecRngToEPTHSC5 {
+		type unsigned;
+		size 10 bits;
+		offset 40 bits;
+	}
+}
+signal frame GW_HSC5_IPK_FrP06 {
+	received;
+	/* identifier = 0x541; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS5 */
+	/* period = 200 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal CalendarDayHSC5 {
+		type unsigned;
+		size 5 bits;
+		offset 40 bits;
+	}
+	signal CalendarMonthHSC5 {
+		type unsigned;
+		size 4 bits;
+		offset 48 bits;
+	}
+	signal CalendarYearHSC5 {
+		type unsigned;
+		size 8 bits;
+		offset 56 bits;
+	}
+	signal HourOfDayHSC5 {
+		type unsigned;
+		size 5 bits;
+		offset 32 bits;
+	}
+	signal MinuteOfHourHSC5 {
+		type unsigned;
+		size 6 bits;
+		offset 24 bits;
+	}
+	signal SecsOfMinuteHSC5 {
+		type unsigned;
+		size 6 bits;
+		offset 16 bits;
+	}
+	signal TimeDspFmtHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 22 bits;
+	}
+}
+signal frame GW_HSC5_IPK_FrP09 {
+	received;
+	/* identifier = 0x417; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS5 */
+	/* period = 200 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal ClstrDspdABSWrnngHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 17 bits;
+	}
+	signal ClstrDspdACCSysWrnngHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 62 bits;
+	}
+	signal ClstrDspdAdvFrtLSWHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 14 bits;
+	}
+	signal ClstrDspdAEBSysWrnngHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 30 bits;
+	}
+	signal ClstrDspdAirbagWrnngHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 35 bits;
+	}
+	signal ClstrDspdAltrWrnngHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 28 bits;
+	}
+	signal ClstrDspdAutoholdWrnngHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 58 bits;
+	}
+	signal ClstrDspdBatRplmntRqdWHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 42 bits;
+	}
+	signal ClstrDspdBrkSysWrnngHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 19 bits;
+	}
+	signal ClstrDspdCCWrnngHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 51 bits;
+	}
+	signal ClstrDspdClOvhtdWrnngHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 43 bits;
+	}
+	signal ClstrDspdClSwWrnngHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 38 bits;
+	}
+	signal ClstrDspdDayTimeRLWHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 55 bits;
+	}
+	signal ClstrDspdEleccParkngBWHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 50 bits;
+	}
+	signal ClstrDspdEPSWrnngHSC5 {
+		type unsigned;
+		size 2 bits;
+		offset 0 bits;
+	}
+	signal ClstrDspdFVCMSnsrWrnngHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 63 bits;
+	}
+	signal ClstrDspdHDCWrnngHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 31 bits;
+	}
+	signal ClstrDspdHillHoldWrnngHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 39 bits;
+	}
+	signal ClstrDspdIgnRelayWrnngHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 40 bits;
+	}
+	signal ClstrDspdInfoMskHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 47 bits;
+	}
+	signal ClstrDspdInvdKeyWrnngHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 36 bits;
+	}
+	signal ClstrDspdLBrkLghtWrnngHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 8 bits;
+	}
+	signal ClstrDspdLDipdBeamLWHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 12 bits;
+	}
+	signal ClstrDspdLDircnIndLWHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 10 bits;
+	}
+	signal ClstrDspdLDWSysFltHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 61 bits;
+	}
+	signal ClstrDspdLSideLghtWHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 53 bits;
+	}
+	signal ClstrDspdMalfIndrLghtWHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 48 bits;
+	}
+	signal ClstrDspdOilPrsLowWHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 29 bits;
+	}
+	signal ClstrDspdPDCWrnngHSC5 {
+		type unsigned;
+		size 2 bits;
+		offset 44 bits;
+	}
+	signal ClstrDspdPEWrnngHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 60 bits;
+	}
+	signal ClstrDspdRBrkLghtWrnngHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 9 bits;
+	}
+	signal ClstrDspdRDipdBeamLWHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 13 bits;
+	}
+	signal ClstrDspdRDircnIndLWHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 11 bits;
+	}
+	signal ClstrDspdRevsLampWrnngHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 57 bits;
+	}
+	signal ClstrDspdRrFogLghtWHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 56 bits;
+	}
+	signal ClstrDspdRSideLghtWHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 54 bits;
+	}
+	signal ClstrDspdSASUncalWrnngHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 34 bits;
+	}
+	signal ClstrDspdSASWrnngHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 33 bits;
+	}
+	signal ClstrDspdSCSWrnngHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 15 bits;
+	}
+	signal ClstrDspdScurtKeyBatLWHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 37 bits;
+	}
+	signal ClstrDspdSpdAstSysWHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 52 bits;
+	}
+	signal ClstrDspdSpStBtnWrnngHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 25 bits;
+	}
+	signal ClstrDspdSpStWrnngHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 24 bits;
+	}
+	signal ClstrDspdTCCMWrnngHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 59 bits;
+	}
+	signal ClstrDspdTCSWrnngHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 16 bits;
+	}
+	signal ClstrDspdTrWrnngHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 46 bits;
+	}
+	signal ClstrDspdTyrePrsStsHSC5 {
+		type unsigned;
+		size 2 bits;
+		offset 26 bits;
+	}
+	signal ClstrDspdWshrFludLowWHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 41 bits;
+	}
+}
+signal frame GW_HSC5_IPK_FrP10 {
+	received;
+	/* identifier = 0x343; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS5 */
+	/* period = 100 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal ClstrDspdBMSWrnngHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 58 bits;
+	}
+	signal ClstrDspdEPTWrnngHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 60 bits;
+	}
+	signal ClstrDspdHVDCDCChrgWHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 59 bits;
+	}
+}
+signal frame GW_HSC5_PMDC_FrP01 {
+	received;
+	/* identifier = 0x319; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS5 */
+	/* period = 100 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal BatVol_h5HSC5 {
+		type unsigned;
+		size 14 bits;
+		offset 16 bits;
+	}
+}
+signal frame GW_HSC5_PMDC_FrP03 {
+	received;
+	/* identifier = 0x517; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS5 */
+	/* period = 1000 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal VehLdShedLvl_h5HSC5 {
+		type unsigned;
+		size 3 bits;
+		offset 45 bits;
+	}
+}
+signal frame GW_HSC5_SCS_FrP02 {
+	received;
+	/* identifier = 0x185; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS5 */
+	/* period = 20 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal AirbagDplHSC5 {
+		type boolean;
+		size 1 bits;
+		offset 62 bits;
+	}
+	signal AirbagDplInvsnHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 61 bits;
+	}
+	signal AirbagSysFltHSC5 {
+		type boolean;
+		size 1 bits;
+		offset 60 bits;
+	}
+	signal DrvrSbltAtcHSC5 {
+		type boolean;
+		size 1 bits;
+		offset 59 bits;
+	}
+	signal DrvrSbltAtcVHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 58 bits;
+	}
+	signal FrtPsngSbltAtcHSC5 {
+		type boolean;
+		size 1 bits;
+		offset 47 bits;
+	}
+	signal FrtPsngSbltAtcVHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 46 bits;
+	}
+	signal SDMRCHSC5 {
+		type unsigned;
+		size 2 bits;
+		offset 44 bits;
+	}
+	signal VehCrshTypHSC5 {
+		type unsigned;
+		size 3 bits;
+		offset 28 bits;
+	}
+}
+signal frame GW_HSC5_SCS_FrP15 {
+	received;
+	/* identifier = 0x353; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS5 */
+	/* period = 100 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal AdvFrtLghtngSysIndReqHSC5 {
+		type unsigned;
+		size 3 bits;
+		offset 1 bits;
+	}
+}
+signal frame GW_HSC5_TPMS_FrP01 {
+	received;
+	/* identifier = 0x47D; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS5 */
+	/* period = 400 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal FLTirePrsHSC5 {
+		type unsigned;
+		size 7 bits;
+		offset 0 bits;
+	}
+	signal FLTirePrsVHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 7 bits;
+	}
+	signal FLTireTemHSC5 {
+		type unsigned;
+		size 7 bits;
+		offset 8 bits;
+	}
+	signal FLTireTemVHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 15 bits;
+	}
+	signal FRTirePrsHSC5 {
+		type unsigned;
+		size 7 bits;
+		offset 16 bits;
+	}
+	signal FRTirePrsVHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 23 bits;
+	}
+	signal FRTireTemHSC5 {
+		type unsigned;
+		size 7 bits;
+		offset 24 bits;
+	}
+	signal FRTireTemVHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 31 bits;
+	}
+	signal RLTirePrsHSC5 {
+		type unsigned;
+		size 7 bits;
+		offset 32 bits;
+	}
+	signal RLTirePrsVHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 39 bits;
+	}
+	signal RLTireTemHSC5 {
+		type unsigned;
+		size 7 bits;
+		offset 40 bits;
+	}
+	signal RLTireTemVHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 47 bits;
+	}
+	signal RRTirePrsHSC5 {
+		type unsigned;
+		size 7 bits;
+		offset 48 bits;
+	}
+	signal RRTirePrsVHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 55 bits;
+	}
+	signal RRTireTemHSC5 {
+		type unsigned;
+		size 7 bits;
+		offset 56 bits;
+	}
+	signal RRTireTemVHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 63 bits;
+	}
+}
+signal frame GW_HSC5_TPMS_FrP02 {
+	received;
+	/* identifier = 0x47E; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS5 */
+	/* period = 400 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal FLTireStsHSC5 {
+		type unsigned;
+		size 3 bits;
+		offset 61 bits;
+	}
+	signal FRTireStsHSC5 {
+		type unsigned;
+		size 3 bits;
+		offset 58 bits;
+	}
+	signal RLTireStsHSC5 {
+		type unsigned;
+		size 3 bits;
+		offset 53 bits;
+	}
+	signal RRTireStsHSC5 {
+		type unsigned;
+		size 3 bits;
+		offset 50 bits;
+	}
+	signal TPMSFHSC5 {
+		type boolean;
+		size 1 bits;
+		offset 56 bits;
+	}
+}
+
+/* Transmitted Frames */
+signal frame TBOX_HSC5_FrP00 {
+	periodic transmit;
+	/* identifier = 0x40A; */
+	/* FM_Normal_HS5 */
+	/* period = 100 ms; */
+	/* offset = 0 ms; */
+	frame size 1 bytes;
+	endianness big;
+	signal keep_network_TBOXHSC5 {
+		type boolean;
+		size 1 bits;
+		offset 0 bits;
+		update bit 1;
+	}
+}
+signal frame TBOX_HSC5_FrP01 {
+	periodic transmit;
+	/* identifier = 0x34D; */
+	/* FM_Normal_HS5 */
+	/* period = 100 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	endianness big;
+	signal EmgcCallTrigdHSC5 {
+		type boolean;
+		size 1 bits;
+		offset 60 bits;
+	}
+	signal RmtACReqHSC5 {
+		type unsigned;
+		size 3 bits;
+		offset 52 bits;
+	}
+	signal RmtACTrgtTemReqHSC5 {
+		type unsigned;
+		size 4 bits;
+		offset 48 bits;
+	}
+	signal RmtAirClnrReqHSC5 {
+		type boolean;
+		size 1 bits;
+		offset 43 bits;
+	}
+	signal RmtDiagsAHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 63 bits;
+	}
+	signal RmtFLSeatHeatReqHSC5 {
+		type unsigned;
+		size 2 bits;
+		offset 46 bits;
+	}
+	signal RmtFRSeatHeatReqHSC5 {
+		type unsigned;
+		size 2 bits;
+		offset 44 bits;
+	}
+	signal TelmcsSrvcStsHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 59 bits;
+	}
+}
+signal frame TBOX_HSC5_FrP04 {
+	periodic transmit;
+	/* identifier = 0x41C; */
+	/* FM_Normal_HS5 */
+	/* period = 200 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	endianness big;
+	signal TBOXCphr2LrnResultFdbkHSC5 {
+		type unsigned;
+		size 1 bits;
+		offset 30 bits;
+	}
+}
+signal frame TBOX_HSC5_FrS00 {
+	sporadic transmit;
+	/* identifier = 0x401; */
+	/* FM_Normal_HS5 */
+	/* period = 20 ms; */
+	/* FM_Silent_HS5 */
+	/* period = 20 ms; */
+	frame size 1 bytes;
+	endianness big;
+	signal wake_network_TBOXHSC5 {
+		type boolean;
+		size 1 bits;
+		offset 0 bits;
+		update bit 1;
+	}
+}
+signal frame TBOX_HSC5_FrS01 {
+	sporadic transmit;
+	/* identifier = 0x02C; */
+	/* FM_Normal_HS5 */
+	/* period = 150 ms; */
+	frame size 8 bytes;
+	endianness big;
+	signal TBOXImmoData1HSC5 {
+		type bytes;
+		size 8 bytes;
+		offset 0 bits;
+	}
+}
+signal frame TBOX_HSC5_FrS02 {
+	sporadic transmit;
+	/* identifier = 0x02D; */
+	/* FM_Normal_HS5 */
+	/* period = 150 ms; */
+	frame size 8 bytes;
+	endianness big;
+	signal TBOXImmoData2HSC5 {
+		type bytes;
+		size 8 bytes;
+		offset 0 bits;
+	}
+}
+signal frame TBOX_HSC5_FrS05 {
+	sporadic transmit;
+	/* identifier = 0x040; */
+	/* FM_Normal_HS5 */
+	/* period = 10 ms; */
+	frame size 8 bytes;
+	endianness big;
+	signal TelmcsRmtCtrlPotclHSC5 {
+		type bytes;
+		size 8 bytes;
+		offset 0 bits;
+	}
+}
+
+/* TBOX_HSC6 */
+/* TBOX_HSC6_Ctrl */
+
+/* Received Frames */
+signal frame BMS_Charger_HSC6_FrP01 {
+	received;
+	/* identifier = 0x3B8; */
+	/* Receive Modes */
+	/* FM_Normal_HS6 */
+	/* Publisher: BMS_HSC6 */
+	/* Transmit Timing */
+	/* FM_Normal_HS6 */
+	/* period = 100 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal ChargerStatusHSC6 {
+		type unsigned;
+		size 4 bits;
+		offset 4 bits;
+	}
+}
+signal frame BMS_HSC6_FrP01 {
+	received;
+	/* identifier = 0x295; */
+	/* Receive Modes */
+	/* FM_Normal_HS6 */
+	/* Publisher: BMS_HSC6 */
+	/* Transmit Timing */
+	/* FM_Normal_HS6 */
+	/* period = 20 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal BMSPackCrntHSC6 {
+		type unsigned;
+		size 16 bits;
+		offset 8 bits;
+	}
+	signal BMSPackSOCHSC6 {
+		type unsigned;
+		size 10 bits;
+		offset 24 bits;
+	}
+	signal BMSPackVol_h6HSC6 {
+		type unsigned;
+		size 12 bits;
+		offset 48 bits;
+	}
+}
+signal frame BMS_HSC6_FrP02 {
+	received;
+	/* identifier = 0x297; */
+	/* Receive Modes */
+	/* FM_Normal_HS6 */
+	/* Publisher: BMS_HSC6 */
+	/* Transmit Timing */
+	/* FM_Normal_HS6 */
+	/* period = 50 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal BMSBscStaHSC6 {
+		type unsigned;
+		size 5 bits;
+		offset 48 bits;
+	}
+	signal BMSPtIsltnRstcHSC6 {
+		type unsigned;
+		size 14 bits;
+		offset 16 bits;
+	}
+	signal OffbdChrgrSysKeepAwkHSC6 {
+		type boolean;
+		size 1 bits;
+		offset 55 bits;
+	}
+	signal OnbdChrgrSysKeepAwkHSC6 {
+		type boolean;
+		size 1 bits;
+		offset 56 bits;
+	}
+}
+signal frame BMS_HSC6_FrP04 {
+	received;
+	/* identifier = 0x29C; */
+	/* Receive Modes */
+	/* FM_Normal_HS6 */
+	/* Publisher: BMS_HSC6 */
+	/* Transmit Timing */
+	/* FM_Normal_HS6 */
+	/* period = 100 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal BMSChrgRmnHourHSC6 {
+		type unsigned;
+		size 5 bits;
+		offset 51 bits;
+	}
+	signal BMSChrgRmnMinuteHSC6 {
+		type unsigned;
+		size 6 bits;
+		offset 58 bits;
+	}
+}
+signal frame BMS_HSC6_FrP08 {
+	received;
+	/* identifier = 0x44C; */
+	/* Receive Modes */
+	/* FM_Normal_HS6 */
+	/* Publisher: BMS_HSC6 */
+	/* Transmit Timing */
+	/* FM_Normal_HS6 */
+	/* period = 100 ms; */
+	/* offset = 0 ms; */
+	frame size 1 bytes;
+	dlc_check_mode permissive;
+	endianness big;
+	signal keep_network_BMSHSC6 {
+		type boolean;
+		size 1 bits;
+		offset 0 bits;
+		update bit 1;
+	}
+}
+signal frame BMS_HSC6_FrP10 {
+	received;
+	/* identifier = 0x173; */
+	/* Receive Modes */
+	/* FM_Normal_HS6 */
+	/* Publisher: BMS_HSC6 */
+	/* Transmit Timing */
+	/* FM_Normal_HS6 */
+	/* period = 20 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal BMSCellMaxVolHSC6 {
+		type unsigned;
+		size 13 bits;
+		offset 16 bits;
+	}
+	signal BMSCellMinVolHSC6 {
+		type unsigned;
+		size 13 bits;
+		offset 0 bits;
+	}
+}
+signal frame BMS_HSC6_FrP11 {
+	received;
+	/* identifier = 0x2A2; */
+	/* Receive Modes */
+	/* FM_Normal_HS6 */
+	/* Publisher: BMS_HSC6 */
+	/* Transmit Timing */
+	/* FM_Normal_HS6 */
+	/* period = 50 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal BMSCellMaxTem_h6HSC6 {
+		type unsigned;
+		size 8 bits;
+		offset 56 bits;
+	}
+}
+signal frame BMS_HSC6_FrP13 {
+	received;
+	/* identifier = 0x3AC; */
+	/* Receive Modes */
+	/* FM_Normal_HS6 */
+	/* Publisher: BMS_HSC6 */
+	/* Transmit Timing */
+	/* FM_Normal_HS6 */
+	/* period = 100 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal BMSPackSOCDsp_h6HSC6 {
+		type unsigned;
+		size 10 bits;
+		offset 32 bits;
+	}
+}
+signal frame BMS_HSC6_FrP14 {
+	received;
+	/* identifier = 0x391; */
+	/* Receive Modes */
+	/* FM_Normal_HS6 */
+	/* Publisher: BMS_HSC6 */
+	/* Transmit Timing */
+	/* FM_Normal_HS6 */
+	/* period = 100 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal BMSChrgSts_h6HSC6 {
+		type unsigned;
+		size 4 bits;
+		offset 28 bits;
+	}
+	signal BMSReserDurtnTimeDspCmd_h6HSC6 {
+		type unsigned;
+		size 6 bits;
+		offset 50 bits;
+	}
+	signal BMSReserPushItemHSC6 {
+		type unsigned;
+		size 3 bits;
+		offset 40 bits;
+	}
+	signal BMSReserStDurtnTimeDspCmdHSC6 {
+		type unsigned;
+		size 5 bits;
+		offset 35 bits;
+	}
+	signal BMSReserStHourDspCmdHSC6 {
+		type unsigned;
+		size 5 bits;
+		offset 43 bits;
+	}
+	signal BMSReserStMinuteDspCmdHSC6 {
+		type unsigned;
+		size 6 bits;
+		offset 58 bits;
+	}
+}
+signal frame BMS_HSC6_FrP15 {
+	received;
+	/* identifier = 0x393; */
+	/* Receive Modes */
+	/* FM_Normal_HS6 */
+	/* Publisher: BMS_HSC6 */
+	/* Transmit Timing */
+	/* FM_Normal_HS6 */
+	/* period = 100 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal BMSReserChrgCtrlDspCmdHSC6 {
+		type unsigned;
+		size 3 bits;
+		offset 5 bits;
+	}
+	signal BMSReserChrgEnrgDspCmd_h6HSC6 {
+		type unsigned;
+		size 6 bits;
+		offset 26 bits;
+	}
+	signal BMSReserChrgFltReasonHSC6 {
+		type unsigned;
+		size 16 bits;
+		offset 48 bits;
+	}
+	signal BMSReserChrgFrqcDspCmdHSC6 {
+		type unsigned;
+		size 2 bits;
+		offset 46 bits;
+	}
+	signal BMSReserChrgMdDspCmd_h6HSC6 {
+		type unsigned;
+		size 3 bits;
+		offset 43 bits;
+	}
+	signal BMSReserChrgRespVHSC6 {
+		type unsigned;
+		size 1 bits;
+		offset 42 bits;
+	}
+	signal BMSReserChrgRngDspCmd_h6HSC6 {
+		type unsigned;
+		size 10 bits;
+		offset 32 bits;
+	}
+	signal BMSReserFltReasonHSC6 {
+		type unsigned;
+		size 3 bits;
+		offset 2 bits;
+	}
+	signal BMSReserMaxCrntDspCmd_h6HSC6 {
+		type unsigned;
+		size 6 bits;
+		offset 10 bits;
+	}
+	signal BMSReserStaDspCmdHSC6 {
+		type unsigned;
+		size 2 bits;
+		offset 8 bits;
+	}
+	signal BMSReserTrgtSOCDspCmd_h6HSC6 {
+		type unsigned;
+		size 10 bits;
+		offset 16 bits;
+	}
+}
+signal frame BMS_HSC6_FrS00 {
+	received;
+	/* identifier = 0x443; */
+	/* Receive Modes */
+	/* FM_Normal_HS6 */
+	/* FM_Silent_HS6 */
+	/* Publisher: BMS_HSC6 */
+	/* Transmit Timing */
+	/* FM_Normal_HS6 */
+	/* period = 9 ms; */
+	/* FM_Silent_HS6 */
+	/* period = 9 ms; */
+	frame size 1 bytes;
+	dlc_check_mode permissive;
+	endianness big;
+	signal wake_network_BMSHSC6 {
+		type unsigned;
+		size 1 bits;
+		offset 0 bits;
+		update bit 1;
+	}
+}
+signal frame HCU_HSC6_FrP05 {
+	received;
+	/* identifier = 0x08A; */
+	/* Receive Modes */
+	/* FM_Normal_HS6 */
+	/* Publisher: VCU_HSC6 */
+	/* Transmit Timing */
+	/* FM_Normal_HS6 */
+	/* period = 10 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal ElecMotEmgcShutDwnHSC6 {
+		type boolean;
+		size 1 bits;
+		offset 23 bits;
+	}
+	signal EPTHVEmgcPwrOffReqHSC6 {
+		type boolean;
+		size 1 bits;
+		offset 16 bits;
+	}
+}
+signal frame ISC_HSC6_FrP03 {
+	received;
+	/* identifier = 0x093; */
+	/* Receive Modes */
+	/* FM_Normal_HS6 */
+	/* Publisher: ISC_HSC6 */
+	/* Transmit Timing */
+	/* FM_Normal_HS6 */
+	/* period = 10 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal ISGSpdHSC6 {
+		type unsigned;
+		size 16 bits;
+		offset 32 bits;
+	}
+	signal ISGSpdVHSC6 {
+		type unsigned;
+		size 1 bits;
+		offset 59 bits;
+	}
+}
+signal frame ISC_HSC6_FrP05 {
+	received;
+	/* identifier = 0x397; */
+	/* Receive Modes */
+	/* FM_Normal_HS6 */
+	/* Publisher: ISC_HSC6 */
+	/* Transmit Timing */
+	/* FM_Normal_HS6 */
+	/* period = 100 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal ISGFltIOHSC6 {
+		type boolean;
+		size 1 bits;
+		offset 24 bits;
+	}
+	signal ISGHVInhdHSC6 {
+		type boolean;
+		size 1 bits;
+		offset 27 bits;
+	}
+	signal ISGInvtrTemHSC6 {
+		type unsigned;
+		size 8 bits;
+		offset 32 bits;
+	}
+	signal ISGSttrTemHSC6 {
+		type unsigned;
+		size 8 bits;
+		offset 8 bits;
+	}
+}
+signal frame ISC_HSC6_FrP06 {
+	received;
+	/* identifier = 0x398; */
+	/* Receive Modes */
+	/* FM_Normal_HS6 */
+	/* Publisher: ISC_HSC6 */
+	/* Transmit Timing */
+	/* FM_Normal_HS6 */
+	/* period = 100 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal ISGFlr1HSC6 {
+		type unsigned;
+		size 8 bits;
+		offset 56 bits;
+	}
+	signal ISGFlr2HSC6 {
+		type unsigned;
+		size 8 bits;
+		offset 48 bits;
+	}
+	signal ISGFlr3HSC6 {
+		type unsigned;
+		size 8 bits;
+		offset 40 bits;
+	}
+	signal ISGFlr4HSC6 {
+		type unsigned;
+		size 8 bits;
+		offset 32 bits;
+	}
+	signal ISGFlr5HSC6 {
+		type unsigned;
+		size 8 bits;
+		offset 24 bits;
+	}
+	signal ISGFlr6HSC6 {
+		type unsigned;
+		size 8 bits;
+		offset 16 bits;
+	}
+	signal ISGFlr7HSC6 {
+		type unsigned;
+		size 8 bits;
+		offset 8 bits;
+	}
+	signal ISGFlr8HSC6 {
+		type unsigned;
+		size 8 bits;
+		offset 0 bits;
+	}
+}
+signal frame ISC_HSC6_FrP07 {
+	received;
+	/* identifier = 0x395; */
+	/* Receive Modes */
+	/* FM_Normal_HS6 */
+	/* Publisher: ISC_HSC6 */
+	/* Transmit Timing */
+	/* FM_Normal_HS6 */
+	/* period = 100 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal ISGHVRdyHSC6 {
+		type boolean;
+		size 1 bits;
+		offset 31 bits;
+	}
+	signal ISGInvtrClntTemHSC6 {
+		type unsigned;
+		size 8 bits;
+		offset 56 bits;
+	}
+	signal ISGOfstAngHSC6 {
+		type unsigned;
+		size 16 bits;
+		offset 40 bits;
+	}
+	signal ISGRtrTemHSC6 {
+		type unsigned;
+		size 8 bits;
+		offset 32 bits;
+	}
+}
+signal frame TC_HSC6_FrP01 {
+	received;
+	/* identifier = 0x094; */
+	/* Receive Modes */
+	/* FM_Normal_HS6 */
+	/* Publisher: TC_HSC6 */
+	/* Transmit Timing */
+	/* FM_Normal_HS6 */
+	/* period = 10 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal TMSpd_h6HSC6 {
+		type unsigned;
+		size 16 bits;
+		offset 48 bits;
+	}
+}
+signal frame TC_HSC6_FrP03 {
+	received;
+	/* identifier = 0x39B; */
+	/* Receive Modes */
+	/* FM_Normal_HS6 */
+	/* Publisher: TC_HSC6 */
+	/* Transmit Timing */
+	/* FM_Normal_HS6 */
+	/* period = 100 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal TMFltIOHSC6 {
+		type boolean;
+		size 1 bits;
+		offset 14 bits;
+	}
+	signal TMHVInhdHSC6 {
+		type boolean;
+		size 1 bits;
+		offset 9 bits;
+	}
+	signal TMInvtrTemHSC6 {
+		type unsigned;
+		size 8 bits;
+		offset 56 bits;
+	}
+	signal TMSttrTemHSC6 {
+		type unsigned;
+		size 8 bits;
+		offset 48 bits;
+	}
+}
+signal frame TC_HSC6_FrP04 {
+	received;
+	/* identifier = 0x3A6; */
+	/* Receive Modes */
+	/* FM_Normal_HS6 */
+	/* Publisher: TC_HSC6 */
+	/* Transmit Timing */
+	/* FM_Normal_HS6 */
+	/* period = 100 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal TMFlr1HSC6 {
+		type unsigned;
+		size 8 bits;
+		offset 56 bits;
+	}
+	signal TMFlr2HSC6 {
+		type unsigned;
+		size 8 bits;
+		offset 48 bits;
+	}
+	signal TMFlr3HSC6 {
+		type unsigned;
+		size 8 bits;
+		offset 40 bits;
+	}
+	signal TMFlr4HSC6 {
+		type unsigned;
+		size 8 bits;
+		offset 32 bits;
+	}
+	signal TMFlr5HSC6 {
+		type unsigned;
+		size 8 bits;
+		offset 24 bits;
+	}
+	signal TMFlr6HSC6 {
+		type unsigned;
+		size 8 bits;
+		offset 16 bits;
+	}
+	signal TMFlr7HSC6 {
+		type unsigned;
+		size 8 bits;
+		offset 8 bits;
+	}
+	signal TMFlr8HSC6 {
+		type unsigned;
+		size 8 bits;
+		offset 0 bits;
+	}
+}
+signal frame TC_HSC6_FrP07 {
+	received;
+	/* identifier = 0x396; */
+	/* Receive Modes */
+	/* FM_Normal_HS6 */
+	/* Publisher: TC_HSC6 */
+	/* Transmit Timing */
+	/* FM_Normal_HS6 */
+	/* period = 100 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal TMHVRdyHSC6 {
+		type boolean;
+		size 1 bits;
+		offset 31 bits;
+	}
+	signal TMImmoResultHSC6 {
+		type boolean;
+		size 1 bits;
+		offset 30 bits;
+	}
+	signal TMInvtrClntTemHSC6 {
+		type unsigned;
+		size 8 bits;
+		offset 56 bits;
+	}
+	signal TMOfstAngHSC6 {
+		type unsigned;
+		size 16 bits;
+		offset 40 bits;
+	}
+	signal TMRtrTemHSC6 {
+		type unsigned;
+		size 8 bits;
+		offset 32 bits;
+	}
+}
+
+/* Transmitted Frames */
+signal frame TBOX_HSC6_FrP00 {
+	periodic transmit;
+	/* identifier = 0x41D; */
+	/* FM_Normal_HS6 */
+	/* period = 200 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	endianness big;
+	signal TelmcsLclCalendarDayHSC6 {
+		type unsigned;
+		size 5 bits;
+		offset 40 bits;
+	}
+	signal TelmcsLclCalendarMonthHSC6 {
+		type unsigned;
+		size 4 bits;
+		offset 48 bits;
+	}
+	signal TelmcsLclCalendarYearHSC6 {
+		type unsigned;
+		size 8 bits;
+		offset 56 bits;
+	}
+	signal TelmcsLclHourOfDayHSC6 {
+		type unsigned;
+		size 5 bits;
+		offset 32 bits;
+	}
+	signal TelmcsLclMinuteOfHourHSC6 {
+		type unsigned;
+		size 6 bits;
+		offset 24 bits;
+	}
+	signal TelmcsLclSecsOfMinuteHSC6 {
+		type unsigned;
+		size 6 bits;
+		offset 16 bits;
+	}
+}
+signal frame TBOX_HSC6_FrP03 {
+	periodic transmit;
+	/* identifier = 0x41B; */
+	/* FM_Normal_HS6 */
+	/* period = 200 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	endianness big;
+	signal TBOXUnvslTimeChksmHSC6 {
+		type unsigned;
+		size 8 bits;
+		offset 0 bits;
+	}
+}
+signal frame TBOX_HSC6_FrP06 {
+	periodic transmit;
+	/* identifier = 0x356; */
+	/* FM_Normal_HS6 */
+	/* period = 100 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	endianness big;
+	signal TBOXReserDurtnTimeHSC6 {
+		type unsigned;
+		size 6 bits;
+		offset 16 bits;
+	}
+	signal TBOXReserStDayHSC6 {
+		type unsigned;
+		size 5 bits;
+		offset 40 bits;
+	}
+	signal TBOXReserStDurtnTimeHSC6 {
+		type unsigned;
+		size 5 bits;
+		offset 8 bits;
+	}
+	signal TBOXReserStHourHSC6 {
+		type unsigned;
+		size 5 bits;
+		offset 32 bits;
+	}
+	signal TBOXReserStMinuteHSC6 {
+		type unsigned;
+		size 6 bits;
+		offset 24 bits;
+	}
+	signal TBOXReserStMonthHSC6 {
+		type unsigned;
+		size 4 bits;
+		offset 48 bits;
+	}
+	signal TBOXReserStTimeChksmHSC6 {
+		type unsigned;
+		size 8 bits;
+		offset 0 bits;
+	}
+	signal TBOXReserStYearHSC6 {
+		type unsigned;
+		size 8 bits;
+		offset 56 bits;
+	}
+}
+signal frame TBOX_HSC6_FrP07 {
+	periodic transmit;
+	/* identifier = 0x358; */
+	/* FM_Normal_HS6 */
+	/* period = 100 ms; */
+	/* offset = 0 ms; */
+	frame size 8 bytes;
+	endianness big;
+	signal TBOXReserChrgCtrlReqHSC6 {
+		type unsigned;
+		size 3 bits;
+		offset 50 bits;
+	}
+	signal TBOXReserChrgEnrgHSC6 {
+		type unsigned;
+		size 6 bits;
+		offset 34 bits;
+	}
+	signal TBOXReserChrgFrqcHSC6 {
+		type unsigned;
+		size 2 bits;
+		offset 62 bits;
+	}
+	signal TBOXReserChrgMdReqHSC6 {
+		type unsigned;
+		size 3 bits;
+		offset 53 bits;
+	}
+	signal TBOXReserChrgRngHSC6 {
+		type unsigned;
+		size 10 bits;
+		offset 40 bits;
+	}
+	signal TBOXReserMaxCrntHSC6 {
+		type unsigned;
+		size 6 bits;
+		offset 56 bits;
+	}
+	signal TBOXReserTrgtSOCHSC6 {
+		type unsigned;
+		size 10 bits;
+		offset 24 bits;
+	}
+}
+
+/* TBOX_RTDIAG */
+/* TBOX_RTDIAG_Ctrl */
+
+/* Received Frames */
+
+/* Transmitted Frames */
+
+/* Immediate Frames */
+
+/* TBOX_HSC5 */
+/* TBOX_ifc0 */
+
+/* Received Immediate Frames */
+immediate frame DIAG_FuncReq_HSC5 {
+	/* identifier = 0x7DF; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* FM_Quiet_HS5 */
+	/* FM_Silent_HS5 */
+	/* Publisher: DIAG_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal DiagnosticFuncAddrReq {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysReq_TBOX {
+	/* identifier = 0x711; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* FM_Quiet_HS5 */
+	/* FM_Silent_HS5 */
+	/* Publisher: DIAG_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal DiagnosticReqTBOX {
+		offset 0 bits;
+	}
+}
+
+immediate frame DIAG_PhysReq_h6TBOX {
+	/* identifier = 0x712; */
+	/* Receive Modes */
+	/* FM_Normal_HS */
+	/* FM_Quiet_HS */
+	/* FM_Silent_HS */
+	/* Publisher: DIAG_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal DiagnosticReq_h6TBOX {
+		offset 0 bits;
+	}
+}
+
+immediate frame GW_HSC4_FrI05 {
+	/* identifier = 0x41F; */
+	/* Receive Modes */
+	/* FM_Normal_HS5 */
+	/* FM_Silent_HS5 */
+	/* Publisher: GW_HSC5 */
+	/* Transmit Timing */
+	/* FM_Normal_HS5 */
+	/* TxInterval = 50 ms; */
+	/* FM_Quiet_HS5 */
+	/* TxInterval = 50 ms; */
+	frame size 3 bytes;
+	dlc_check_mode permissive;
+	endianness big;
+	signal network_mode {
+		offset 16 bits;
+	}
+	signal signal_config_id {
+		offset 0 bits;
+	}
+}
+
+/* Transmitted Immediate Frames */
+immediate frame DIAG_PhysResp_TBOX {
+	/* identifier = 0x719; */
+	/* FM_Normal_HS5 */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS5 */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS5 */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	endianness big;
+	signal DiagnosticRespTBOX {
+		offset 0 bits;
+	}
+}
+
+/* TBOX_HSC6 */
+/* TBOX_HSC6_Ctrl */
+
+/* Received Immediate Frames */
+
+/* Transmitted Immediate Frames */
+immediate frame TBOX_HSC6_NWM {
+	/* identifier = 0x41F; */
+	/* FM_Normal_HS6 */
+	/* TxInterval = 20 ms; */
+	/* FM_Quiet_HS6 */
+	/* TxInterval = 20 ms; */
+	frame size 3 bytes;
+	endianness big;
+	signal network_mode_h6 {
+		offset 16 bits;
+	}
+	signal signal_config_id_h6 {
+		offset 0 bits;
+	}
+}
+
+/* TBOX_RTDIAG */
+/* TBOX_RTDIAG_Ctrl */
+
+/* Received Immediate Frames */
+immediate frame DIAG_PhysResp_GW_AC {
+	/* identifier = 0x758; */
+	/* Receive Modes */
+	/* FM_Normal_HS */
+	/* FM_Quiet_HS */
+	/* FM_Silent_HS */
+	/* Publisher: DIAG_RT */
+	/* Transmit Timing */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal DiagnosticRespAC_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysResp_GW_AFS {
+	/* identifier = 0x74C; */
+	/* Receive Modes */
+	/* FM_Normal_HS */
+	/* FM_Quiet_HS */
+	/* FM_Silent_HS */
+	/* Publisher: DIAG_RT */
+	/* Transmit Timing */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal DiagnosticRespAFS_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysResp_GW_APA {
+	/* identifier = 0x739; */
+	/* Receive Modes */
+	/* FM_Normal_HS */
+	/* FM_Quiet_HS */
+	/* FM_Silent_HS */
+	/* Publisher: DIAG_RT */
+	/* Transmit Timing */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal DiagnosticRespAPA_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysResp_GW_BCM {
+	/* identifier = 0x748; */
+	/* Receive Modes */
+	/* FM_Normal_HS */
+	/* FM_Quiet_HS */
+	/* FM_Silent_HS */
+	/* Publisher: DIAG_RT */
+	/* Transmit Timing */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal DiagnosticRespBCM_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysResp_GW_BMS {
+	/* identifier = 0x789; */
+	/* Receive Modes */
+	/* FM_Normal_HS */
+	/* FM_Quiet_HS */
+	/* FM_Silent_HS */
+	/* Publisher: DIAG_RT */
+	/* Transmit Timing */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal DiagnosticRespBMS_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysResp_GW_EHBS {
+	/* identifier = 0x72E; */
+	/* Receive Modes */
+	/* FM_Normal_HS */
+	/* FM_Quiet_HS */
+	/* FM_Silent_HS */
+	/* Publisher: DIAG_RT */
+	/* Transmit Timing */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal DiagnosticRespEHBS_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysResp_GW_EPB {
+	/* identifier = 0x72B; */
+	/* Receive Modes */
+	/* FM_Normal_HS */
+	/* FM_Quiet_HS */
+	/* FM_Silent_HS */
+	/* Publisher: DIAG_RT */
+	/* Transmit Timing */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal DiagnosticRespEPB_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysResp_GW_EPS {
+	/* identifier = 0x729; */
+	/* Receive Modes */
+	/* FM_Normal_HS */
+	/* FM_Quiet_HS */
+	/* FM_Silent_HS */
+	/* Publisher: DIAG_RT */
+	/* Transmit Timing */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal DiagnosticRespEPS_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysResp_GW_FICM {
+	/* identifier = 0x769; */
+	/* Receive Modes */
+	/* FM_Normal_HS */
+	/* FM_Quiet_HS */
+	/* FM_Silent_HS */
+	/* Publisher: DIAG_RT */
+	/* Transmit Timing */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal DiagnosticRespFICM_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysResp_GW_FVCM {
+	/* identifier = 0x73B; */
+	/* Receive Modes */
+	/* FM_Normal_HS */
+	/* FM_Quiet_HS */
+	/* FM_Silent_HS */
+	/* Publisher: DIAG_RT */
+	/* Transmit Timing */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal DiagnosticRespFVCM_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysResp_GW_VCU {
+	/* identifier = 0x7EB; */
+	/* Receive Modes */
+	/* FM_Normal_HS */
+	/* FM_Quiet_HS */
+	/* FM_Silent_HS */
+	/* Publisher: DIAG_RT */
+	/* Transmit Timing */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal DiagnosticRespHCU_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysResp_GW_HVDCDC {
+	/* identifier = 0x78D; */
+	/* Receive Modes */
+	/* FM_Normal_HS */
+	/* FM_Quiet_HS */
+	/* FM_Silent_HS */
+	/* Publisher: DIAG_RT */
+	/* Transmit Timing */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal DiagnosticRespHVDCDC_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysResp_GW_IPK {
+	/* identifier = 0x768; */
+	/* Receive Modes */
+	/* FM_Normal_HS */
+	/* FM_Quiet_HS */
+	/* FM_Silent_HS */
+	/* Publisher: DIAG_RT */
+	/* Transmit Timing */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal DiagnosticRespIPK_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysResp_GW_ISC {
+	/* identifier = 0x78B; */
+	/* Receive Modes */
+	/* FM_Normal_HS */
+	/* FM_Quiet_HS */
+	/* FM_Silent_HS */
+	/* Publisher: DIAG_RT */
+	/* Transmit Timing */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal DiagnosticRespISC_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysResp_GW_MSM {
+	/* identifier = 0x74E; */
+	/* Receive Modes */
+	/* FM_Normal_HS */
+	/* FM_Quiet_HS */
+	/* FM_Silent_HS */
+	/* Publisher: DIAG_RT */
+	/* Transmit Timing */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal DiagnosticRespMSM_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysResp_GW_PACM {
+	/* identifier = 0x76B; */
+	/* Receive Modes */
+	/* FM_Normal_HS */
+	/* FM_Quiet_HS */
+	/* FM_Silent_HS */
+	/* Publisher: DIAG_RT */
+	/* Transmit Timing */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal DiagnosticRespPACM_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysResp_GW_PEPS {
+	/* identifier = 0x74D; */
+	/* Receive Modes */
+	/* FM_Normal_HS */
+	/* FM_Quiet_HS */
+	/* FM_Silent_HS */
+	/* Publisher: DIAG_RT */
+	/* Transmit Timing */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal DiagnosticRespPEPS_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysResp_GW_PLCM {
+	/* identifier = 0x749; */
+	/* Receive Modes */
+	/* FM_Normal_HS */
+	/* FM_Quiet_HS */
+	/* FM_Silent_HS */
+	/* Publisher: DIAG_RT */
+	/* Transmit Timing */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal DiagnosticRespPLCM_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysResp_GW_RDA {
+	/* identifier = 0x73A; */
+	/* Receive Modes */
+	/* FM_Normal_HS */
+	/* FM_Quiet_HS */
+	/* FM_Silent_HS */
+	/* Publisher: DIAG_RT */
+	/* Transmit Timing */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal DiagnosticRespRDA_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysResp_GW_RT {
+	/* identifier = 0x718; */
+	/* Receive Modes */
+	/* FM_Normal_HS */
+	/* FM_Quiet_HS */
+	/* FM_Silent_HS */
+	/* Publisher: DIAG_RT */
+	/* Transmit Timing */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal DiagnosticRespGW_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysResp_GW_SAS {
+	/* identifier = 0x72A; */
+	/* Receive Modes */
+	/* FM_Normal_HS */
+	/* FM_Quiet_HS */
+	/* FM_Silent_HS */
+	/* Publisher: DIAG_RT */
+	/* Transmit Timing */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal DiagnosticRespSAS_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysResp_GW_SCS {
+	/* identifier = 0x728; */
+	/* Receive Modes */
+	/* FM_Normal_HS */
+	/* FM_Quiet_HS */
+	/* FM_Silent_HS */
+	/* Publisher: DIAG_RT */
+	/* Transmit Timing */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal DiagnosticRespSCS_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysResp_GW_SCU {
+	/* identifier = 0x779; */
+	/* Receive Modes */
+	/* FM_Normal_HS */
+	/* FM_Quiet_HS */
+	/* FM_Silent_HS */
+	/* Publisher: DIAG_RT */
+	/* Transmit Timing */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal DiagnosticRespSCU_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysResp_GW_SDM {
+	/* identifier = 0x738; */
+	/* Receive Modes */
+	/* FM_Normal_HS */
+	/* FM_Quiet_HS */
+	/* FM_Silent_HS */
+	/* Publisher: DIAG_RT */
+	/* Transmit Timing */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal DiagnosticRespSDM_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysResp_GW_TC {
+	/* identifier = 0x78A; */
+	/* Receive Modes */
+	/* FM_Normal_HS */
+	/* FM_Quiet_HS */
+	/* FM_Silent_HS */
+	/* Publisher: DIAG_RT */
+	/* Transmit Timing */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal DiagnosticRespTC_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysResp_GW_TPMS {
+	/* identifier = 0x72C; */
+	/* Receive Modes */
+	/* FM_Normal_HS */
+	/* FM_Quiet_HS */
+	/* FM_Silent_HS */
+	/* Publisher: DIAG_RT */
+	/* Transmit Timing */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	dlc_check_mode strict;
+	endianness big;
+	signal DiagnosticRespTPMS_RT {
+		offset 0 bits;
+	}
+}
+
+/* Transmitted Immediate Frames */
+immediate frame DIAG_FuncReq_RT {
+	/* identifier = 0x7DF; */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	endianness big;
+	signal DiagnosticFuncAddrReq_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysReq_TBOX_AC {
+	/* identifier = 0x750; */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	endianness big;
+	signal DiagnosticReqAC_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysReq_TBOX_AFS {
+	/* identifier = 0x744; */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	endianness big;
+	signal DiagnosticReqAFS_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysReq_TBOX_APA {
+	/* identifier = 0x731; */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	endianness big;
+	signal DiagnosticReqAPA_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysReq_TBOX_BCM {
+	/* identifier = 0x740; */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	endianness big;
+	signal DiagnosticReqBCM_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysReq_TBOX_BMS {
+	/* identifier = 0x781; */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	endianness big;
+	signal DiagnosticReqBMS_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysReq_TBOX_EHBS {
+	/* identifier = 0x726; */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	endianness big;
+	signal DiagnosticReqEHBS_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysReq_TBOX_EPB {
+	/* identifier = 0x723; */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	endianness big;
+	signal DiagnosticReqEPB_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysReq_TBOX_EPS {
+	/* identifier = 0x721; */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	endianness big;
+	signal DiagnosticReqEPS_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysReq_TBOX_FICM {
+	/* identifier = 0x761; */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	endianness big;
+	signal DiagnosticReqFICM_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysReq_TBOX_FVCM {
+	/* identifier = 0x733; */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	endianness big;
+	signal DiagnosticReqFVCM_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysReq_TBOX_GW {
+	/* identifier = 0x710; */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	endianness big;
+	signal DiagnosticReqGW_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysReq_TBOX_HVDCDC {
+	/* identifier = 0x785; */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	endianness big;
+	signal DiagnosticReqHVDCDC_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysReq_TBOX_IPK {
+	/* identifier = 0x760; */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	endianness big;
+	signal DiagnosticReqIPK_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysReq_TBOX_ISC {
+	/* identifier = 0x783; */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	endianness big;
+	signal DiagnosticReqISC_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysReq_TBOX_MSM {
+	/* identifier = 0x746; */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	endianness big;
+	signal DiagnosticReqMSM_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysReq_TBOX_PACM {
+	/* identifier = 0x763; */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	endianness big;
+	signal DiagnosticReqPACM_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysReq_TBOX_PEPS {
+	/* identifier = 0x745; */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	endianness big;
+	signal DiagnosticReqPEPS_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysReq_TBOX_PLCM {
+	/* identifier = 0x741; */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	endianness big;
+	signal DiagnosticReqPLCM_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysReq_TBOX_RDA {
+	/* identifier = 0x732; */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	endianness big;
+	signal DiagnosticReqRDA_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysReq_TBOX_SAS {
+	/* identifier = 0x722; */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	endianness big;
+	signal DiagnosticReqSAS_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysReq_TBOX_SCS {
+	/* identifier = 0x720; */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	endianness big;
+	signal DiagnosticReqSCS_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysReq_TBOX_SCU {
+	/* identifier = 0x771; */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	endianness big;
+	signal DiagnosticReqSCU_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysReq_TBOX_SDM {
+	/* identifier = 0x730; */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	endianness big;
+	signal DiagnosticReqSDM_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysReq_TBOX_TC {
+	/* identifier = 0x782; */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	endianness big;
+	signal DiagnosticReqTC_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysReq_TBOX_TPMS {
+	/* identifier = 0x724; */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	endianness big;
+	signal DiagnosticReqTPMS_RT {
+		offset 0 bits;
+	}
+}
+immediate frame DIAG_PhysReq_TBOX_VCU {
+	/* identifier = 0x7E3; */
+	/* FM_Normal_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Quiet_HS */
+	/* TxInterval = 10 ms; */
+	/* FM_Silent_HS */
+	/* TxInterval = 10 ms; */
+	frame size 8 bytes;
+	endianness big;
+	signal DiagnosticReqHCU_RT {
+		offset 0 bits;
+	}
+}
+
+/* Frame Modes */
+frame mode FM_Normal_HS5 {
+	/* Rx Frames */
+	carries frame DIAG_DTCInfo_GW;
+	carries frame DIAG_FuncReq_HSC5;
+	carries frame DIAG_PhysReq_TBOX;
+	carries frame GW_DIAG_DTCInfo_AC;
+	carries frame GW_DIAG_DTCInfo_AFS;
+	carries frame GW_DIAG_DTCInfo_APA;
+	carries frame GW_DIAG_DTCInfo_BCM;
+	carries frame GW_DIAG_DTCInfo_BMS;
+	carries frame GW_DIAG_DTCInfo_EHBS;
+	carries frame GW_DIAG_DTCInfo_EPB;
+	carries frame GW_DIAG_DTCInfo_EPS;
+	carries frame GW_DIAG_DTCInfo_FICM;
+	carries frame GW_DIAG_DTCInfo_FVCM;
+	carries frame GW_DIAG_DTCInfo_HCU;
+	carries frame GW_DIAG_DTCInfo_HVDCDC;
+	carries frame GW_DIAG_DTCInfo_IPK;
+	carries frame GW_DIAG_DTCInfo_ISC;
+	carries frame GW_DIAG_DTCInfo_MSM;
+	carries frame GW_DIAG_DTCInfo_PACM;
+	carries frame GW_DIAG_DTCInfo_PEPS;
+	carries frame GW_DIAG_DTCInfo_PLCM;
+	carries frame GW_DIAG_DTCInfo_RDA;
+	carries frame GW_DIAG_DTCInfo_SAS;
+	carries frame GW_DIAG_DTCInfo_SCS;
+	carries frame GW_DIAG_DTCInfo_SCU;
+	carries frame GW_DIAG_DTCInfo_SDM;
+	carries frame GW_DIAG_DTCInfo_TC;
+	carries frame GW_DIAG_DTCInfo_TPMS;
+	carries frame GW_HSC5_AC_FrP01;
+	carries frame GW_HSC5_AC_FrP08;
+	carries frame GW_HSC5_BCM_FrP02;
+	carries frame GW_HSC5_BCM_FrP04;
+	carries frame GW_HSC5_BCM_FrP09;
+	carries frame GW_HSC5_BCM_FrP10;
+	carries frame GW_HSC5_BCM_FrS09;
+	carries frame GW_HSC5_BCM_FrS10;
+	carries frame GW_HSC5_BCM_FrS13;
+	carries frame GW_HSC5_ECM_FrP00;
+	carries frame GW_HSC5_ECM_FrP04;
+	carries frame GW_HSC5_FICM_FrP12;
+	carries frame GW_HSC4_FrI05;
+	carries frame GW_HSC5_FrP01;
+	carries frame GW_HSC5_FrP02;
+	carries frame GW_HSC5_FrP05;
+	carries frame GW_HSC5_FrP10;
+	carries frame GW_HSC5_IPK_FrP03;
+	carries frame GW_HSC5_IPK_FrP06;
+	carries frame GW_HSC5_IPK_FrP09;
+	carries frame GW_HSC5_IPK_FrP10;
+	carries frame GW_HSC5_PMDC_FrP01;
+	carries frame GW_HSC5_PMDC_FrP03;
+	carries frame GW_HSC5_SCS_FrP02;
+	carries frame GW_HSC5_SCS_FrP15;
+	carries frame GW_HSC5_TPMS_FrP01;
+	carries frame GW_HSC5_TPMS_FrP02;
+	/* Tx Frames */
+	carries frame DIAG_PhysResp_TBOX;
+	carries frame TBOX_HSC5_FrP00;
+	carries frame TBOX_HSC5_FrP01;
+	carries frame TBOX_HSC5_FrP04;
+	carries frame TBOX_HSC5_FrS00;
+	carries frame TBOX_HSC5_FrS01;
+	carries frame TBOX_HSC5_FrS02;
+	carries frame TBOX_HSC5_FrS05;
+	periodic {
+		frame TBOX_HSC5_FrP00 every 100 ms offset 0 us;
+		frame TBOX_HSC5_FrP01 every 100 ms offset 0 us;
+		frame TBOX_HSC5_FrP04 every 200 ms offset 0 us;
+	}	/* periodic */
+}	/* mode */
+
+frame mode FM_Quiet_HS5 {
+	/* Rx Frames */
+	carries frame DIAG_FuncReq_HSC5;
+	carries frame DIAG_PhysReq_TBOX;
+	/* Tx Frames */
+	carries frame DIAG_PhysResp_TBOX;
+	periodic {
+	}	/* periodic */
+}	/* mode */
+
+frame mode FM_Silent_HS5 {
+	/* Rx Frames */
+	carries frame DIAG_FuncReq_HSC5;
+	carries frame DIAG_PhysReq_TBOX;
+	carries frame GW_HSC4_FrI05;
+	/* Tx Frames */
+	carries frame DIAG_PhysResp_TBOX;
+	carries frame TBOX_HSC5_FrS00;
+	periodic {
+	}	/* periodic */
+}	/* mode */
+
+frame mode FM_Normal_HS6 {
+	/* Rx Frames */
+	carries frame BMS_Charger_HSC6_FrP01;
+	carries frame BMS_HSC6_FrP01;
+	carries frame BMS_HSC6_FrP02;
+	carries frame BMS_HSC6_FrP04;
+	carries frame BMS_HSC6_FrP08;
+	carries frame BMS_HSC6_FrP10;
+	carries frame BMS_HSC6_FrP11;
+	carries frame BMS_HSC6_FrP13;
+	carries frame BMS_HSC6_FrP14;
+	carries frame BMS_HSC6_FrP15;
+	carries frame BMS_HSC6_FrS00;
+	carries frame HCU_HSC6_FrP05;
+	carries frame ISC_HSC6_FrP03;
+	carries frame ISC_HSC6_FrP05;
+	carries frame ISC_HSC6_FrP06;
+	carries frame ISC_HSC6_FrP07;
+	carries frame TC_HSC6_FrP01;
+	carries frame TC_HSC6_FrP03;
+	carries frame TC_HSC6_FrP04;
+	carries frame TC_HSC6_FrP07;
+	/* Tx Frames */
+	carries frame TBOX_HSC6_FrP00;
+	carries frame TBOX_HSC6_FrP03;
+	carries frame TBOX_HSC6_FrP06;
+	carries frame TBOX_HSC6_FrP07;
+	carries frame TBOX_HSC6_NWM;
+	periodic {
+		frame TBOX_HSC6_FrP00 every 200 ms offset 0 us;
+		frame TBOX_HSC6_FrP03 every 200 ms offset 0 us;
+		frame TBOX_HSC6_FrP06 every 100 ms offset 0 us;
+		frame TBOX_HSC6_FrP07 every 100 ms offset 0 us;
+	}	/* periodic */
+}	/* mode */
+
+frame mode FM_Quiet_HS6 {
+	/* Rx Frames */
+	/* Tx Frames */
+	carries frame TBOX_HSC6_NWM;
+	periodic {
+	}	/* periodic */
+}	/* mode */
+
+frame mode FM_Silent_HS6 {
+	/* Rx Frames */
+	carries frame BMS_HSC6_FrS00;
+	/* Tx Frames */
+	periodic {
+	}	/* periodic */
+}	/* mode */
+
+frame mode FM_Normal_HS {
+	/* Rx Frames */
+	carries frame DIAG_PhysResp_GW_AC;
+	carries frame DIAG_PhysResp_GW_AFS;
+	carries frame DIAG_PhysResp_GW_APA;
+	carries frame DIAG_PhysResp_GW_BCM;
+	carries frame DIAG_PhysResp_GW_BMS;
+	carries frame DIAG_PhysResp_GW_EHBS;
+	carries frame DIAG_PhysResp_GW_EPB;
+	carries frame DIAG_PhysResp_GW_EPS;
+	carries frame DIAG_PhysResp_GW_FICM;
+	carries frame DIAG_PhysResp_GW_FVCM;
+	carries frame DIAG_PhysResp_GW_VCU;
+	carries frame DIAG_PhysResp_GW_HVDCDC;
+	carries frame DIAG_PhysResp_GW_IPK;
+	carries frame DIAG_PhysResp_GW_ISC;
+	carries frame DIAG_PhysResp_GW_MSM;
+	carries frame DIAG_PhysResp_GW_PACM;
+	carries frame DIAG_PhysResp_GW_PEPS;
+	carries frame DIAG_PhysResp_GW_PLCM;
+	carries frame DIAG_PhysResp_GW_RDA;
+	carries frame DIAG_PhysResp_GW_RT;
+	carries frame DIAG_PhysResp_GW_SAS;
+	carries frame DIAG_PhysResp_GW_SCS;
+	carries frame DIAG_PhysResp_GW_SCU;
+	carries frame DIAG_PhysResp_GW_SDM;
+	carries frame DIAG_PhysResp_GW_TC;
+	carries frame DIAG_PhysResp_GW_TPMS;
+	/* Tx Frames */
+	carries frame DIAG_FuncReq_RT;
+	carries frame DIAG_PhysReq_TBOX_AC;
+	carries frame DIAG_PhysReq_TBOX_AFS;
+	carries frame DIAG_PhysReq_TBOX_APA;
+	carries frame DIAG_PhysReq_TBOX_BCM;
+	carries frame DIAG_PhysReq_TBOX_BMS;
+	carries frame DIAG_PhysReq_TBOX_EHBS;
+	carries frame DIAG_PhysReq_TBOX_EPB;
+	carries frame DIAG_PhysReq_TBOX_EPS;
+	carries frame DIAG_PhysReq_TBOX_FICM;
+	carries frame DIAG_PhysReq_TBOX_FVCM;
+	carries frame DIAG_PhysReq_TBOX_GW;
+	carries frame DIAG_PhysReq_TBOX_HVDCDC;
+	carries frame DIAG_PhysReq_TBOX_IPK;
+	carries frame DIAG_PhysReq_TBOX_ISC;
+	carries frame DIAG_PhysReq_TBOX_MSM;
+	carries frame DIAG_PhysReq_TBOX_PACM;
+	carries frame DIAG_PhysReq_TBOX_PEPS;
+	carries frame DIAG_PhysReq_TBOX_PLCM;
+	carries frame DIAG_PhysReq_TBOX_RDA;
+	carries frame DIAG_PhysReq_TBOX_SAS;
+	carries frame DIAG_PhysReq_TBOX_SCS;
+	carries frame DIAG_PhysReq_TBOX_SCU;
+	carries frame DIAG_PhysReq_TBOX_SDM;
+	carries frame DIAG_PhysReq_TBOX_TC;
+	carries frame DIAG_PhysReq_TBOX_TPMS;
+	carries frame DIAG_PhysReq_TBOX_VCU;
+	periodic {
+	}	/* periodic */
+}	/* mode */
+
+frame mode FM_Quiet_HS {
+	/* Rx Frames */
+	carries frame DIAG_PhysResp_GW_AC;
+	carries frame DIAG_PhysResp_GW_AFS;
+	carries frame DIAG_PhysResp_GW_APA;
+	carries frame DIAG_PhysResp_GW_BCM;
+	carries frame DIAG_PhysResp_GW_BMS;
+	carries frame DIAG_PhysResp_GW_EHBS;
+	carries frame DIAG_PhysResp_GW_EPB;
+	carries frame DIAG_PhysResp_GW_EPS;
+	carries frame DIAG_PhysResp_GW_FICM;
+	carries frame DIAG_PhysResp_GW_FVCM;
+	carries frame DIAG_PhysResp_GW_VCU;
+	carries frame DIAG_PhysResp_GW_HVDCDC;
+	carries frame DIAG_PhysResp_GW_IPK;
+	carries frame DIAG_PhysResp_GW_ISC;
+	carries frame DIAG_PhysResp_GW_MSM;
+	carries frame DIAG_PhysResp_GW_PACM;
+	carries frame DIAG_PhysResp_GW_PEPS;
+	carries frame DIAG_PhysResp_GW_PLCM;
+	carries frame DIAG_PhysResp_GW_RDA;
+	carries frame DIAG_PhysResp_GW_RT;
+	carries frame DIAG_PhysResp_GW_SAS;
+	carries frame DIAG_PhysResp_GW_SCS;
+	carries frame DIAG_PhysResp_GW_SCU;
+	carries frame DIAG_PhysResp_GW_SDM;
+	carries frame DIAG_PhysResp_GW_TC;
+	carries frame DIAG_PhysResp_GW_TPMS;
+	/* Tx Frames */
+	carries frame DIAG_FuncReq_RT;
+	carries frame DIAG_PhysReq_TBOX_AC;
+	carries frame DIAG_PhysReq_TBOX_AFS;
+	carries frame DIAG_PhysReq_TBOX_APA;
+	carries frame DIAG_PhysReq_TBOX_BCM;
+	carries frame DIAG_PhysReq_TBOX_BMS;
+	carries frame DIAG_PhysReq_TBOX_EHBS;
+	carries frame DIAG_PhysReq_TBOX_EPB;
+	carries frame DIAG_PhysReq_TBOX_EPS;
+	carries frame DIAG_PhysReq_TBOX_FICM;
+	carries frame DIAG_PhysReq_TBOX_FVCM;
+	carries frame DIAG_PhysReq_TBOX_GW;
+	carries frame DIAG_PhysReq_TBOX_HVDCDC;
+	carries frame DIAG_PhysReq_TBOX_IPK;
+	carries frame DIAG_PhysReq_TBOX_ISC;
+	carries frame DIAG_PhysReq_TBOX_MSM;
+	carries frame DIAG_PhysReq_TBOX_PACM;
+	carries frame DIAG_PhysReq_TBOX_PEPS;
+	carries frame DIAG_PhysReq_TBOX_PLCM;
+	carries frame DIAG_PhysReq_TBOX_RDA;
+	carries frame DIAG_PhysReq_TBOX_SAS;
+	carries frame DIAG_PhysReq_TBOX_SCS;
+	carries frame DIAG_PhysReq_TBOX_SCU;
+	carries frame DIAG_PhysReq_TBOX_SDM;
+	carries frame DIAG_PhysReq_TBOX_TC;
+	carries frame DIAG_PhysReq_TBOX_TPMS;
+	carries frame DIAG_PhysReq_TBOX_VCU;
+	periodic {
+	}	/* periodic */
+}	/* mode */
+
+frame mode FM_Silent_HS {
+	/* Rx Frames */
+	carries frame DIAG_PhysResp_GW_AC;
+	carries frame DIAG_PhysResp_GW_AFS;
+	carries frame DIAG_PhysResp_GW_APA;
+	carries frame DIAG_PhysResp_GW_BCM;
+	carries frame DIAG_PhysResp_GW_BMS;
+	carries frame DIAG_PhysResp_GW_EHBS;
+	carries frame DIAG_PhysResp_GW_EPB;
+	carries frame DIAG_PhysResp_GW_EPS;
+	carries frame DIAG_PhysResp_GW_FICM;
+	carries frame DIAG_PhysResp_GW_FVCM;
+	carries frame DIAG_PhysResp_GW_VCU;
+	carries frame DIAG_PhysResp_GW_HVDCDC;
+	carries frame DIAG_PhysResp_GW_IPK;
+	carries frame DIAG_PhysResp_GW_ISC;
+	carries frame DIAG_PhysResp_GW_MSM;
+	carries frame DIAG_PhysResp_GW_PACM;
+	carries frame DIAG_PhysResp_GW_PEPS;
+	carries frame DIAG_PhysResp_GW_PLCM;
+	carries frame DIAG_PhysResp_GW_RDA;
+	carries frame DIAG_PhysResp_GW_RT;
+	carries frame DIAG_PhysResp_GW_SAS;
+	carries frame DIAG_PhysResp_GW_SCS;
+	carries frame DIAG_PhysResp_GW_SCU;
+	carries frame DIAG_PhysResp_GW_SDM;
+	carries frame DIAG_PhysResp_GW_TC;
+	carries frame DIAG_PhysResp_GW_TPMS;
+	/* Tx Frames */
+	carries frame DIAG_FuncReq_RT;
+	carries frame DIAG_PhysReq_TBOX_AC;
+	carries frame DIAG_PhysReq_TBOX_AFS;
+	carries frame DIAG_PhysReq_TBOX_APA;
+	carries frame DIAG_PhysReq_TBOX_BCM;
+	carries frame DIAG_PhysReq_TBOX_BMS;
+	carries frame DIAG_PhysReq_TBOX_EHBS;
+	carries frame DIAG_PhysReq_TBOX_EPB;
+	carries frame DIAG_PhysReq_TBOX_EPS;
+	carries frame DIAG_PhysReq_TBOX_FICM;
+	carries frame DIAG_PhysReq_TBOX_FVCM;
+	carries frame DIAG_PhysReq_TBOX_GW;
+	carries frame DIAG_PhysReq_TBOX_HVDCDC;
+	carries frame DIAG_PhysReq_TBOX_IPK;
+	carries frame DIAG_PhysReq_TBOX_ISC;
+	carries frame DIAG_PhysReq_TBOX_MSM;
+	carries frame DIAG_PhysReq_TBOX_PACM;
+	carries frame DIAG_PhysReq_TBOX_PEPS;
+	carries frame DIAG_PhysReq_TBOX_PLCM;
+	carries frame DIAG_PhysReq_TBOX_RDA;
+	carries frame DIAG_PhysReq_TBOX_SAS;
+	carries frame DIAG_PhysReq_TBOX_SCS;
+	carries frame DIAG_PhysReq_TBOX_SCU;
+	carries frame DIAG_PhysReq_TBOX_SDM;
+	carries frame DIAG_PhysReq_TBOX_TC;
+	carries frame DIAG_PhysReq_TBOX_TPMS;
+	carries frame DIAG_PhysReq_TBOX_VCU;
+	periodic {
+	}	/* periodic */
+}	/* mode */
+
+
+/* Interfaces */
+	/*	TBOX_HSC5/TBOX_ifc0	*/
+network interface TBOX_HSC5 {
+	protocol CAN11 {
+	priority_bits 11;
+	filter_bits 0;
+	prescale 4;
+	prop_seg 3;
+	phase_seg1 2;
+	phase_seg2 2;
+	sjw 2;
+	nsamples = 1;
+	interest_mask auto;
+	frame DIAG_DTCInfo_GW size 7 ID 0x7B0;	//Rx
+	frame DIAG_FuncReq_HSC5 size 8 ID 0x7DF;	//Rx
+	frame DIAG_PhysReq_TBOX size 8 ID 0x711;	//Rx
+	frame DIAG_PhysResp_TBOX size 8 ID 0x719;	//Tx
+	frame GW_DIAG_DTCInfo_AC size 7 ID 0x708;	//Rx
+	frame GW_DIAG_DTCInfo_AFS size 7 ID 0x7B4;	//Rx
+	frame GW_DIAG_DTCInfo_APA size 7 ID 0x799;	//Rx
+	frame GW_DIAG_DTCInfo_BCM size 7 ID 0x7B1;	//Rx
+	frame GW_DIAG_DTCInfo_BMS size 7 ID 0x70B;	//Rx
+	frame GW_DIAG_DTCInfo_EHBS size 7 ID 0x796;	//Rx
+	frame GW_DIAG_DTCInfo_EPB size 7 ID 0x793;	//Rx
+	frame GW_DIAG_DTCInfo_EPS size 7 ID 0x791;	//Rx
+	frame GW_DIAG_DTCInfo_FICM size 7 ID 0x7B9;	//Rx
+	frame GW_DIAG_DTCInfo_FVCM size 7 ID 0x79B;	//Rx
+	frame GW_DIAG_DTCInfo_HCU size 7 ID 0x70A;	//Rx
+	frame GW_DIAG_DTCInfo_HVDCDC size 7 ID 0x70F;	//Rx
+	frame GW_DIAG_DTCInfo_IPK size 7 ID 0x7B8;	//Rx
+	frame GW_DIAG_DTCInfo_ISC size 7 ID 0x70D;	//Rx
+	frame GW_DIAG_DTCInfo_MSM size 7 ID 0x7B6;	//Rx
+	frame GW_DIAG_DTCInfo_PACM size 7 ID 0x7BA;	//Rx
+	frame GW_DIAG_DTCInfo_PEPS size 7 ID 0x7B5;	//Rx
+	frame GW_DIAG_DTCInfo_PLCM size 7 ID 0x7BF;	//Rx
+	frame GW_DIAG_DTCInfo_RDA size 7 ID 0x79A;	//Rx
+	frame GW_DIAG_DTCInfo_SAS size 7 ID 0x792;	//Rx
+	frame GW_DIAG_DTCInfo_SCS size 7 ID 0x790;	//Rx
+	frame GW_DIAG_DTCInfo_SCU size 7 ID 0x702;	//Rx
+	frame GW_DIAG_DTCInfo_SDM size 7 ID 0x798;	//Rx
+	frame GW_DIAG_DTCInfo_TC size 7 ID 0x70C;	//Rx
+	frame GW_DIAG_DTCInfo_TPMS size 7 ID 0x794;	//Rx
+	frame GW_HSC5_AC_FrP01 size 8 ID 0x361;	//Rx
+	frame GW_HSC5_AC_FrP08 size 8 ID 0x2FB;	//Rx
+	frame GW_HSC5_BCM_FrP02 size 8 ID 0x473;	//Rx
+	frame GW_HSC5_BCM_FrP04 size 8 ID 0x46A;	//Rx
+	frame GW_HSC5_BCM_FrP09 size 8 ID 0x21D;	//Rx
+	frame GW_HSC5_BCM_FrP10 size 8 ID 0x518;	//Rx
+	frame GW_HSC5_BCM_FrS09 size 8 ID 0x03C;	//Rx
+	frame GW_HSC5_BCM_FrS10 size 8 ID 0x03D;	//Rx
+	frame GW_HSC5_BCM_FrS13 size 8 ID 0x021;	//Rx
+	frame GW_HSC5_ECM_FrP00 size 8 ID 0x0C9;	//Rx
+	frame GW_HSC5_ECM_FrP04 size 8 ID 0x194;	//Rx
+	frame GW_HSC5_FICM_FrP12 size 8 ID 0x367;	//Rx
+	frame GW_HSC4_FrI05 size 3 ID 0x41F;	//Rx
+	frame GW_HSC5_FrP01 size 8 ID 0x1F1;	//Rx
+	frame GW_HSC5_FrP02 size 8 ID 0x0F1;	//Rx
+	frame GW_HSC5_FrP05 size 2 ID 0x1F2;	//Rx
+	frame GW_HSC5_FrP10 size 8 ID 0x3F1;	//Rx
+	frame GW_HSC5_IPK_FrP03 size 8 ID 0x416;	//Rx
+	frame GW_HSC5_IPK_FrP06 size 8 ID 0x541;	//Rx
+	frame GW_HSC5_IPK_FrP09 size 8 ID 0x417;	//Rx
+	frame GW_HSC5_IPK_FrP10 size 8 ID 0x343;	//Rx
+	frame GW_HSC5_PMDC_FrP01 size 8 ID 0x319;	//Rx
+	frame GW_HSC5_PMDC_FrP03 size 8 ID 0x517;	//Rx
+	frame GW_HSC5_SCS_FrP02 size 8 ID 0x185;	//Rx
+	frame GW_HSC5_SCS_FrP15 size 8 ID 0x353;	//Rx
+	frame GW_HSC5_TPMS_FrP01 size 8 ID 0x47D;	//Rx
+	frame GW_HSC5_TPMS_FrP02 size 8 ID 0x47E;	//Rx
+	frame TBOX_HSC5_FrP00 size 1 ID 0x40A;	//Tx
+	frame TBOX_HSC5_FrP01 size 8 ID 0x34D;	//Tx
+	frame TBOX_HSC5_FrP04 size 8 ID 0x41C;	//Tx
+	frame TBOX_HSC5_FrS00 size 1 ID 0x401;	//Tx
+	frame TBOX_HSC5_FrS01 size 8 ID 0x02C;	//Tx
+	frame TBOX_HSC5_FrS02 size 8 ID 0x02D;	//Tx
+	frame TBOX_HSC5_FrS05 size 8 ID 0x040;	//Tx
+	platform TRANSPORT_OPTIONAL {
+/* Slot Allocate Message:
+Not enough RxFrame Slots: Too many frames not
+passing the interest mask(s) */
+		}//transport
+	}//protocol
+}//interface
+
+	/*	TBOX_HSC6/TBOX_HSC6_Ctrl	*/
+network interface TBOX_HSC6 {
+	protocol CAN11 {
+	priority_bits 11;
+	filter_bits 0;
+	prescale 4;
+	prop_seg 3;
+	phase_seg1 2;
+	phase_seg2 2;
+	sjw 2;
+	nsamples = 1;
+	interest_mask auto;
+	frame BMS_Charger_HSC6_FrP01 size 8 ID 0x3B8;	//Rx
+	frame BMS_HSC6_FrP01 size 8 ID 0x295;	//Rx
+	frame BMS_HSC6_FrP02 size 8 ID 0x297;	//Rx
+	frame BMS_HSC6_FrP04 size 8 ID 0x29C;	//Rx
+	frame BMS_HSC6_FrP08 size 1 ID 0x44C;	//Rx
+	frame BMS_HSC6_FrP10 size 8 ID 0x173;	//Rx
+	frame BMS_HSC6_FrP11 size 8 ID 0x2A2;	//Rx
+	frame BMS_HSC6_FrP13 size 8 ID 0x3AC;	//Rx
+	frame BMS_HSC6_FrP14 size 8 ID 0x391;	//Rx
+	frame BMS_HSC6_FrP15 size 8 ID 0x393;	//Rx
+	frame BMS_HSC6_FrS00 size 1 ID 0x443;	//Rx
+	frame HCU_HSC6_FrP05 size 8 ID 0x08A;	//Rx
+	frame ISC_HSC6_FrP03 size 8 ID 0x093;	//Rx
+	frame ISC_HSC6_FrP05 size 8 ID 0x397;	//Rx
+	frame ISC_HSC6_FrP06 size 8 ID 0x398;	//Rx
+	frame ISC_HSC6_FrP07 size 8 ID 0x395;	//Rx
+	frame TBOX_HSC6_FrP00 size 8 ID 0x41D;	//Tx
+	frame TBOX_HSC6_FrP03 size 8 ID 0x41B;	//Tx
+	frame TBOX_HSC6_FrP06 size 8 ID 0x356;	//Tx
+	frame TBOX_HSC6_FrP07 size 8 ID 0x358;	//Tx
+	frame TBOX_HSC6_NWM size 3 ID 0x41F;	//Tx
+	frame TC_HSC6_FrP01 size 8 ID 0x094;	//Rx
+	frame TC_HSC6_FrP03 size 8 ID 0x39B;	//Rx
+	frame TC_HSC6_FrP04 size 8 ID 0x3A6;	//Rx
+	frame TC_HSC6_FrP07 size 8 ID 0x396;	//Rx
+	platform TRANSPORT_OPTIONAL {
+/* Slot Allocate Message:
+Not enough RxFrame Slots: Too many frames not
+passing the interest mask(s) */
+		}//transport
+	}//protocol
+}//interface
+
+	/*	TBOX_RTDIAG/TBOX_RTDIAG_Ctrl	*/
+network interface TBOX_RTDIAG {
+	protocol CAN11 {
+	priority_bits 11;
+	filter_bits 0;
+	prescale 4;
+	prop_seg 3;
+	phase_seg1 2;
+	phase_seg2 2;
+	sjw 2;
+	nsamples = 1;
+	interest_mask "xxxxxxxxxxx" if_required;
+	frame DIAG_FuncReq_RT size 8 ID 0x7DF;	//Tx
+	frame DIAG_PhysReq_TBOX_AC size 8 ID 0x750;	//Tx
+	frame DIAG_PhysReq_TBOX_AFS size 8 ID 0x744;	//Tx
+	frame DIAG_PhysReq_TBOX_APA size 8 ID 0x731;	//Tx
+	frame DIAG_PhysReq_TBOX_BCM size 8 ID 0x740;	//Tx
+	frame DIAG_PhysReq_TBOX_BMS size 8 ID 0x781;	//Tx
+	frame DIAG_PhysReq_TBOX_EHBS size 8 ID 0x726;	//Tx
+	frame DIAG_PhysReq_TBOX_EPB size 8 ID 0x723;	//Tx
+	frame DIAG_PhysReq_TBOX_EPS size 8 ID 0x721;	//Tx
+	frame DIAG_PhysReq_TBOX_FICM size 8 ID 0x761;	//Tx
+	frame DIAG_PhysReq_TBOX_FVCM size 8 ID 0x733;	//Tx
+	frame DIAG_PhysReq_TBOX_GW size 8 ID 0x710;	//Tx
+	frame DIAG_PhysReq_TBOX_HVDCDC size 8 ID 0x785;	//Tx
+	frame DIAG_PhysReq_TBOX_IPK size 8 ID 0x760;	//Tx
+	frame DIAG_PhysReq_TBOX_ISC size 8 ID 0x783;	//Tx
+	frame DIAG_PhysReq_TBOX_MSM size 8 ID 0x746;	//Tx
+	frame DIAG_PhysReq_TBOX_PACM size 8 ID 0x763;	//Tx
+	frame DIAG_PhysReq_TBOX_PEPS size 8 ID 0x745;	//Tx
+	frame DIAG_PhysReq_TBOX_PLCM size 8 ID 0x741;	//Tx
+	frame DIAG_PhysReq_TBOX_RDA size 8 ID 0x732;	//Tx
+	frame DIAG_PhysReq_TBOX_SAS size 8 ID 0x722;	//Tx
+	frame DIAG_PhysReq_TBOX_SCS size 8 ID 0x720;	//Tx
+	frame DIAG_PhysReq_TBOX_SCU size 8 ID 0x771;	//Tx
+	frame DIAG_PhysReq_TBOX_SDM size 8 ID 0x730;	//Tx
+	frame DIAG_PhysReq_TBOX_TC size 8 ID 0x782;	//Tx
+	frame DIAG_PhysReq_TBOX_TPMS size 8 ID 0x724;	//Tx
+	frame DIAG_PhysReq_TBOX_VCU size 8 ID 0x7E3;	//Tx
+	frame DIAG_PhysResp_GW_AC size 8 ID 0x758;	//Rx
+	frame DIAG_PhysResp_GW_AFS size 8 ID 0x74C;	//Rx
+	frame DIAG_PhysResp_GW_APA size 8 ID 0x739;	//Rx
+	frame DIAG_PhysResp_GW_BCM size 8 ID 0x748;	//Rx
+	frame DIAG_PhysResp_GW_BMS size 8 ID 0x789;	//Rx
+	frame DIAG_PhysResp_GW_EHBS size 8 ID 0x72E;	//Rx
+	frame DIAG_PhysResp_GW_EPB size 8 ID 0x72B;	//Rx
+	frame DIAG_PhysResp_GW_EPS size 8 ID 0x729;	//Rx
+	frame DIAG_PhysResp_GW_FICM size 8 ID 0x769;	//Rx
+	frame DIAG_PhysResp_GW_FVCM size 8 ID 0x73B;	//Rx
+	frame DIAG_PhysResp_GW_VCU size 8 ID 0x7EB;	//Rx
+	frame DIAG_PhysResp_GW_HVDCDC size 8 ID 0x78D;	//Rx
+	frame DIAG_PhysResp_GW_IPK size 8 ID 0x768;	//Rx
+	frame DIAG_PhysResp_GW_ISC size 8 ID 0x78B;	//Rx
+	frame DIAG_PhysResp_GW_MSM size 8 ID 0x74E;	//Rx
+	frame DIAG_PhysResp_GW_PACM size 8 ID 0x76B;	//Rx
+	frame DIAG_PhysResp_GW_PEPS size 8 ID 0x74D;	//Rx
+	frame DIAG_PhysResp_GW_PLCM size 8 ID 0x749;	//Rx
+	frame DIAG_PhysResp_GW_RDA size 8 ID 0x73A;	//Rx
+	frame DIAG_PhysResp_GW_RT size 8 ID 0x718;	//Rx
+	frame DIAG_PhysResp_GW_SAS size 8 ID 0x72A;	//Rx
+	frame DIAG_PhysResp_GW_SCS size 8 ID 0x728;	//Rx
+	frame DIAG_PhysResp_GW_SCU size 8 ID 0x779;	//Rx
+	frame DIAG_PhysResp_GW_SDM size 8 ID 0x738;	//Rx
+	frame DIAG_PhysResp_GW_TC size 8 ID 0x78A;	//Rx
+	frame DIAG_PhysResp_GW_TPMS size 8 ID 0x72C;	//Rx
+	platform TRANSPORT_OPTIONAL {
+		}//transport
+	}//protocol
+}//interface
+
+
+/* Signal Mappings */
+
+/* TBOX/TBOX_HSC5 */
+	map signal from application EmgcCallTrigd to EmgcCallTrigdHSC5;
+	map signal from application keep_network_TBOX to keep_network_TBOXHSC5;
+	map signal from application RmtACReq to RmtACReqHSC5;
+	map signal from application RmtACTrgtTemReq to RmtACTrgtTemReqHSC5;
+	map signal from application RmtAirClnrReq to RmtAirClnrReqHSC5;
+	map signal from application RmtDiagsA to RmtDiagsAHSC5;
+	map signal from application RmtFLSeatHeatReq to RmtFLSeatHeatReqHSC5;
+	map signal from application RmtFRSeatHeatReq to RmtFRSeatHeatReqHSC5;
+	map signal from application TBOXCphr2LrnResultFdbk to TBOXCphr2LrnResultFdbkHSC5;
+	map signal from application TBOXImmoData1 to TBOXImmoData1HSC5;
+	map signal from application TBOXImmoData2 to TBOXImmoData2HSC5;
+	map signal from application TelmcsRmtCtrlPotcl to TelmcsRmtCtrlPotclHSC5;
+	map signal from application TelmcsSrvcSts to TelmcsSrvcStsHSC5;
+	map signal from application wake_network_TBOX to wake_network_TBOXHSC5;
+	map signal from ACInCarTemHSC5 to application ACInCarTem;
+	map signal from AdvFrtLghtngSysIndReqHSC5 to application AdvFrtLghtngSysIndReq;
+	map signal from AirbagDplHSC5 to application AirbagDpl;
+	map signal from AirbagDplInvsnHSC5 to application AirbagDplInvsn;
+	map signal from AirbagSysFltHSC5 to application AirbagSysFlt;
+	map signal from AirClnrFltrLifeHSC5 to application AirClnrFltrLife;
+	map signal from AirClnrFltrLifeVHSC5 to application AirClnrFltrLifeV;
+	map signal from AutoLghtOnReqHSC5 to application AutoLghtOnReq;
+	map signal from BatVol_h5HSC5 to application BatVol;
+	map signal from BCMImmoData4HSC5 to application BCMImmoData4;
+	map signal from BCMImmoData5HSC5 to application BCMImmoData5;
+	map signal from BCMRmtCtrlPotclHSC5 to application BCMRmtCtrlPotcl;
+	map signal from BMSAvlblEnrgHSC5 to application BMSAvlblEnrg;
+	map signal from BntOpenStsHSC5 to application BntOpenSts;
+	map signal from BrkPdlPos_h5HSC5 to application BrkPdlPos;
+	map signal from CalendarDayHSC5 to application CalendarDay;
+	map signal from CalendarMonthHSC5 to application CalendarMonth;
+	map signal from CalendarYearHSC5 to application CalendarYear;
+	map signal from ClstrDspdABSWrnngHSC5 to application ClstrDspdABSWrnng;
+	map signal from ClstrDspdACCSysWrnngHSC5 to application ClstrDspdACCSysWrnng;
+	map signal from ClstrDspdAdvFrtLSWHSC5 to application ClstrDspdAdvFrtLSW;
+	map signal from ClstrDspdAEBSysWrnngHSC5 to application ClstrDspdAEBSysWrnng;
+	map signal from ClstrDspdAirbagWrnngHSC5 to application ClstrDspdAirbagWrnng;
+	map signal from ClstrDspdAltrWrnngHSC5 to application ClstrDspdAltrWrnng;
+	map signal from ClstrDspdAutoholdWrnngHSC5 to application ClstrDspdAutoholdWrnng;
+	map signal from ClstrDspdBatRplmntRqdWHSC5 to application ClstrDspdBatRplmntRqdW;
+	map signal from ClstrDspdBMSWrnngHSC5 to application ClstrDspdBMSWrnng;
+	map signal from ClstrDspdBrkSysWrnngHSC5 to application ClstrDspdBrkSysWrnng;
+	map signal from ClstrDspdCCWrnngHSC5 to application ClstrDspdCCWrnng;
+	map signal from ClstrDspdClOvhtdWrnngHSC5 to application ClstrDspdClOvhtdWrnng;
+	map signal from ClstrDspdClSwWrnngHSC5 to application ClstrDspdClSwWrnng;
+	map signal from ClstrDspdDayTimeRLWHSC5 to application ClstrDspdDayTimeRLW;
+	map signal from ClstrDspdEleccParkngBWHSC5 to application ClstrDspdEleccParkngBW;
+	map signal from ClstrDspdEPSWrnngHSC5 to application ClstrDspdEPSWrnng;
+	map signal from ClstrDspdEPTWrnngHSC5 to application ClstrDspdEPTWrnng;
+	map signal from ClstrDspdFVCMSnsrWrnngHSC5 to application ClstrDspdFVCMSnsrWrnng;
+	map signal from ClstrDspdHDCWrnngHSC5 to application ClstrDspdHDCWrnng;
+	map signal from ClstrDspdHillHoldWrnngHSC5 to application ClstrDspdHillHoldWrnng;
+	map signal from ClstrDspdHVDCDCChrgWHSC5 to application ClstrDspdHVDCDCChrgW;
+	map signal from ClstrDspdIgnRelayWrnngHSC5 to application ClstrDspdIgnRelayWrnng;
+	map signal from ClstrDspdInfoMskHSC5 to application ClstrDspdInfoMsk;
+	map signal from ClstrDspdInvdKeyWrnngHSC5 to application ClstrDspdInvdKeyWrnng;
+	map signal from ClstrDspdLBrkLghtWrnngHSC5 to application ClstrDspdLBrkLghtWrnng;
+	map signal from ClstrDspdLDipdBeamLWHSC5 to application ClstrDspdLDipdBeamLW;
+	map signal from ClstrDspdLDircnIndLWHSC5 to application ClstrDspdLDircnIndLW;
+	map signal from ClstrDspdLDWSysFltHSC5 to application ClstrDspdLDWSysFlt;
+	map signal from ClstrDspdLSideLghtWHSC5 to application ClstrDspdLSideLghtW;
+	map signal from ClstrDspdMalfIndrLghtWHSC5 to application ClstrDspdMalfIndrLghtW;
+	map signal from ClstrDspdOilPrsLowWHSC5 to application ClstrDspdOilPrsLowW;
+	map signal from ClstrDspdPDCWrnngHSC5 to application ClstrDspdPDCWrnng;
+	map signal from ClstrDspdPEWrnngHSC5 to application ClstrDspdPEWrnng;
+	map signal from ClstrDspdRBrkLghtWrnngHSC5 to application ClstrDspdRBrkLghtWrnng;
+	map signal from ClstrDspdRDipdBeamLWHSC5 to application ClstrDspdRDipdBeamLW;
+	map signal from ClstrDspdRDircnIndLWHSC5 to application ClstrDspdRDircnIndLW;
+	map signal from ClstrDspdRevsLampWrnngHSC5 to application ClstrDspdRevsLampWrnng;
+	map signal from ClstrDspdRrFogLghtWHSC5 to application ClstrDspdRrFogLghtW;
+	map signal from ClstrDspdRSideLghtWHSC5 to application ClstrDspdRSideLghtW;
+	map signal from ClstrDspdSASUncalWrnngHSC5 to application ClstrDspdSASUncalWrnng;
+	map signal from ClstrDspdSASWrnngHSC5 to application ClstrDspdSASWrnng;
+	map signal from ClstrDspdSCSWrnngHSC5 to application ClstrDspdSCSWrnng;
+	map signal from ClstrDspdScurtKeyBatLWHSC5 to application ClstrDspdScurtKeyBatLW;
+	map signal from ClstrDspdSpdAstSysWHSC5 to application ClstrDspdSpdAstSysW;
+	map signal from ClstrDspdSpStBtnWrnngHSC5 to application ClstrDspdSpStBtnWrnng;
+	map signal from ClstrDspdSpStWrnngHSC5 to application ClstrDspdSpStWrnng;
+	map signal from ClstrDspdTCCMWrnngHSC5 to application ClstrDspdTCCMWrnng;
+	map signal from ClstrDspdTCSWrnngHSC5 to application ClstrDspdTCSWrnng;
+	map signal from ClstrDspdTrWrnngHSC5 to application ClstrDspdTrWrnng;
+	map signal from ClstrDspdTyrePrsStsHSC5 to application ClstrDspdTyrePrsSts;
+	map signal from ClstrDspdVehSpdHSC5 to application ClstrDspdVehSpd;
+	map signal from ClstrDspdWshrFludLowWHSC5 to application ClstrDspdWshrFludLowW;
+	map signal from ClstrElecRngToEPTHSC5 to application ClstrElecRngToEPT;
+	map signal from DimLghtLvlHSC5 to application DimLghtLvl;
+	map signal from DipdBeamLghtOnHSC5 to application DipdBeamLghtOn;
+	map signal from DrvrDoorOpenStsHSC5 to application DrvrDoorOpenSts;
+	map signal from DrvrSbltAtcHSC5 to application DrvrSbltAtc;
+	map signal from DrvrSbltAtcVHSC5 to application DrvrSbltAtcV;
+	map signal from DTCInfomationACHSC5 to application DTCInfomationAC;
+	map signal from DTCInfomationAFSHSC5 to application DTCInfomationAFS;
+	map signal from DTCInfomationAPAHSC5 to application DTCInfomationAPA;
+	map signal from DTCInfomationBCMHSC5 to application DTCInfomationBCM;
+	map signal from DTCInfomationBMSHSC5 to application DTCInfomationBMS;
+	map signal from DTCInfomationEHBSHSC5 to application DTCInfomationEHBS;
+	map signal from DTCInfomationEPBHSC5 to application DTCInfomationEPB;
+	map signal from DTCInfomationEPSHSC5 to application DTCInfomationEPS;
+	map signal from DTCInfomationFICMHSC5 to application DTCInfomationFICM;
+	map signal from DTCInfomationFVCMHSC5 to application DTCInfomationFVCM;
+	map signal from DTCInfomationGWHSC5 to application DTCInfomationGW;
+	map signal from DTCInfomationHCUHSC5 to application DTCInfomationHCU;
+	map signal from DTCInfomationHVDCDCHSC5 to application DTCInfomationHVDCDC;
+	map signal from DTCInfomationIPKHSC5 to application DTCInfomationIPK;
+	map signal from DTCInfomationISCHSC5 to application DTCInfomationISC;
+	map signal from DTCInfomationMSMHSC5 to application DTCInfomationMSM;
+	map signal from DTCInfomationPACMHSC5 to application DTCInfomationPACM;
+	map signal from DTCInfomationPEPSHSC5 to application DTCInfomationPEPS;
+	map signal from DTCInfomationPLCMHSC5 to application DTCInfomationPLCM;
+	map signal from DTCInfomationRDAHSC5 to application DTCInfomationRDA;
+	map signal from DTCInfomationSASHSC5 to application DTCInfomationSAS;
+	map signal from DTCInfomationSCSHSC5 to application DTCInfomationSCS;
+	map signal from DTCInfomationSCUHSC5 to application DTCInfomationSCU;
+	map signal from DTCInfomationSDMHSC5 to application DTCInfomationSDM;
+	map signal from DTCInfomationTCHSC5 to application DTCInfomationTC;
+	map signal from DTCInfomationTPMSHSC5 to application DTCInfomationTPMS;
+	map signal from EPTAccelActuPosHSC5 to application EPTAccelActuPos;
+	map signal from EPTBrkPdlDscrtInptStsHSC5 to application EPTBrkPdlDscrtInptSts;
+	map signal from EPTRdyHSC5 to application EPTRdy;
+	map signal from EPTStCmdOnHSC5 to application EPTStCmdOn;
+	map signal from FasnDrvrSbltIndCmdHSC5 to application FasnDrvrSbltIndCmd;
+	map signal from FasnFrtPsngSbltIndCmdHSC5 to application FasnFrtPsngSbltIndCmd;
+	map signal from FLTirePrsHSC5 to application FLTirePrs;
+	map signal from FLTirePrsVHSC5 to application FLTirePrsV;
+	map signal from FLTireStsHSC5 to application FLTireSts;
+	map signal from FLTireTemHSC5 to application FLTireTem;
+	map signal from FLTireTemVHSC5 to application FLTireTemV;
+	map signal from FrtFogLghtOnHSC5 to application FrtFogLghtOn;
+	map signal from FRTirePrsHSC5 to application FRTirePrs;
+	map signal from FRTirePrsVHSC5 to application FRTirePrsV;
+	map signal from FRTireStsHSC5 to application FRTireSts;
+	map signal from FRTireTemHSC5 to application FRTireTem;
+	map signal from FRTireTemVHSC5 to application FRTireTemV;
+	map signal from FrtPsngDoorOpenStsHSC5 to application FrtPsngDoorOpenSts;
+	map signal from FrtPsngSbltAtcHSC5 to application FrtPsngSbltAtc;
+	map signal from FrtPsngSbltAtcVHSC5 to application FrtPsngSbltAtcV;
+	map signal from HornSwAHSC5 to application HornSwA;
+	map signal from HourOfDayHSC5 to application HourOfDay;
+	map signal from HVDCDCHdwrFlrHSC5 to application HVDCDCHdwrFlr;
+	map signal from HVDCDCIntnlFlrHSC5 to application HVDCDCIntnlFlr;
+	map signal from HVDCDCOverHtdHSC5 to application HVDCDCOverHtd;
+	map signal from KeyRefcHSC5 to application KeyRefc;
+	map signal from LDircnIOHSC5 to application LDircnIO;
+	map signal from LdspcOpenStsHSC5 to application LdspcOpenSts;
+	map signal from LghtSwPosStsHSC5 to application LghtSwPosSts;
+	map signal from MainBeamLghtOnHSC5 to application MainBeamLghtOn;
+	map signal from MainBeamSwPosStsHSC5 to application MainBeamSwPosSts;
+	map signal from MinuteOfHourHSC5 to application MinuteOfHour;
+	map signal from MSMFLSeatHeatLvlHSC5 to application MSMFLSeatHeatLvl;
+	map signal from MSMFRSeatHeatLvlHSC5 to application MSMFRSeatHeatLvl;
+	map signal from MSMRmtSeatHeatFlrRsnHSC5 to application MSMRmtSeatHeatFlrRsn;
+	map signal from MSMRmtSeatHeatStsHSC5 to application MSMRmtSeatHeatSts;
+	map signal from OtsdAirTemCrVal_h5HSC5 to application OtsdAirTemCrVal;
+	map signal from OtsdAirTemCrValV_h5HSC5 to application OtsdAirTemCrValV;
+	map signal from PwrMdMstrAccryA_h5HSC5 to application PwrMdMstrAccryA;
+	map signal from PwrMdMstrRunCrkA_h5HSC5 to application PwrMdMstrRunCrkA;
+	map signal from RDircnIOHSC5 to application RDircnIO;
+	map signal from RLDoorOpenStsHSC5 to application RLDoorOpenSts;
+	map signal from RLTirePrsHSC5 to application RLTirePrs;
+	map signal from RLTirePrsVHSC5 to application RLTirePrsV;
+	map signal from RLTireStsHSC5 to application RLTireSts;
+	map signal from RLTireTemHSC5 to application RLTireTem;
+	map signal from RLTireTemVHSC5 to application RLTireTemV;
+	map signal from RmnDrvngDistHSC5 to application RmnDrvngDist;
+	map signal from RmtACAbotRsnHSC5 to application RmtACAbotRsn;
+	map signal from RmtACStsHSC5 to application RmtACSts;
+	map signal from RmtAirClnrAHSC5 to application RmtAirClnrA;
+	map signal from RmtAirClnrAbotRsnHSC5 to application RmtAirClnrAbotRsn;
+	map signal from RRDoorOpenStsHSC5 to application RRDoorOpenSts;
+	map signal from RrFogLghtOnHSC5 to application RrFogLghtOn;
+	map signal from RRTirePrsHSC5 to application RRTirePrs;
+	map signal from RRTirePrsVHSC5 to application RRTirePrsV;
+	map signal from RRTireStsHSC5 to application RRTireSts;
+	map signal from RRTireTemHSC5 to application RRTireTem;
+	map signal from RRTireTemVHSC5 to application RRTireTemV;
+	map signal from RVSStsHSC5 to application RVSSts;
+	map signal from ScurtAlrmStsHSC5 to application ScurtAlrmSts;
+	map signal from ScurtAlrmTrigdHSC5 to application ScurtAlrmTrigd;
+	map signal from SDMRCHSC5 to application SDMRC;
+	map signal from SecsOfMinuteHSC5 to application SecsOfMinute;
+	map signal from SysBPMHSC5 to application SysBPM;
+	map signal from SysBPMEnbdHSC5 to application SysBPMEnbd;
+	map signal from SysOpnlMd_h5HSC5 to application SysOpnlMd;
+	map signal from SysPwrMd_h5HSC5 to application SysPwrMd;
+	map signal from SysVol_h5HSC5 to application SysVol;
+	map signal from SysVolMd_h5HSC5 to application SysVolMd;
+	map signal from SysVolV_h5HSC5 to application SysVolV;
+	map signal from TimeDspFmtHSC5 to application TimeDspFmt;
+	map signal from TPMSFHSC5 to application TPMSF;
+	map signal from VehCrshTypHSC5 to application VehCrshTyp;
+	map signal from VehLckngStaHSC5 to application VehLckngSta;
+	map signal from VehLdShedLvl_h5HSC5 to application VehLdShedLvl;
+	map signal from VehSideLghtStsHSC5 to application VehSideLghtSts;
+	map signal from VINBCMHSC5 to application VINBCM;
+	map signal from stale constant 200 to application busoff_decrement_time;
+	map signal from stale constant 15 to application busoff_max;
+	map signal from stale constant 50 to application busoff_time;
+	map signal from stale constant 200 to application busoff_wait_time;
+	map signal from stale constant 1500 to application communication_timeout_time_slave;
+	map signal from stale constant 100 to application keep_network_timeout_time_slave;
+	map signal from stale constant 28673 to application local_signal_config_id;
+	map signal from stale constant { 0x61, 0x01, 0x17, 0x10, 0x40, 0x37, 0x21, 0x01 } to application NCFRefNoTBOX;
+	map signal from stale constant false to application stay_in_busoff;
+	map signal from stale constant false to application stay_in_expulsion;
+	map signal from stale constant 28 to application wait_for_network_sleep_time_slave;
+	map signal from stale constant 14 to application wakeup_network_signal_time_slave;
+	map signal from stale constant 20 to application wakeup_network_time_slave;
+	map signal from stale constant 20 to application wakeup_pending_time_slave;
+
+/* TBOX/TBOX_HSC6 */
+	map signal from application TBOXReserChrgCtrlReq to TBOXReserChrgCtrlReqHSC6;
+	map signal from application TBOXReserChrgEnrg to TBOXReserChrgEnrgHSC6;
+	map signal from application TBOXReserChrgFrqc to TBOXReserChrgFrqcHSC6;
+	map signal from application TBOXReserChrgMdReq to TBOXReserChrgMdReqHSC6;
+	map signal from application TBOXReserChrgRng to TBOXReserChrgRngHSC6;
+	map signal from application TBOXReserDurtnTime to TBOXReserDurtnTimeHSC6;
+	map signal from application TBOXReserMaxCrnt to TBOXReserMaxCrntHSC6;
+	map signal from application TBOXReserStDay to TBOXReserStDayHSC6;
+	map signal from application TBOXReserStDurtnTime to TBOXReserStDurtnTimeHSC6;
+	map signal from application TBOXReserStHour to TBOXReserStHourHSC6;
+	map signal from application TBOXReserStMinute to TBOXReserStMinuteHSC6;
+	map signal from application TBOXReserStMonth to TBOXReserStMonthHSC6;
+	map signal from application TBOXReserStTimeChksm to TBOXReserStTimeChksmHSC6;
+	map signal from application TBOXReserStYear to TBOXReserStYearHSC6;
+	map signal from application TBOXReserTrgtSOC to TBOXReserTrgtSOCHSC6;
+	map signal from application TBOXUnvslTimeChksm to TBOXUnvslTimeChksmHSC6;
+	map signal from application TelmcsLclCalendarDay to TelmcsLclCalendarDayHSC6;
+	map signal from application TelmcsLclCalendarMonth to TelmcsLclCalendarMonthHSC6;
+	map signal from application TelmcsLclCalendarYear to TelmcsLclCalendarYearHSC6;
+	map signal from application TelmcsLclHourOfDay to TelmcsLclHourOfDayHSC6;
+	map signal from application TelmcsLclMinuteOfHour to TelmcsLclMinuteOfHourHSC6;
+	map signal from application TelmcsLclSecsOfMinute to TelmcsLclSecsOfMinuteHSC6;
+	map signal from BMSBscStaHSC6 to application BMSBscSta;
+	map signal from BMSCellMaxTem_h6HSC6 to application BMSCellMaxTem;
+	map signal from BMSCellMaxVolHSC6 to application BMSCellMaxVol;
+	map signal from BMSCellMinVolHSC6 to application BMSCellMinVol;
+	map signal from BMSChrgRmnHourHSC6 to application BMSChrgRmnHour;
+	map signal from BMSChrgRmnMinuteHSC6 to application BMSChrgRmnMinute;
+	map signal from BMSChrgSts_h6HSC6 to application BMSChrgSts;
+	map signal from BMSPackCrntHSC6 to application BMSPackCrnt;
+	map signal from BMSPackSOCHSC6 to application BMSPackSOC;
+	map signal from BMSPackSOCDsp_h6HSC6 to application BMSPackSOCDsp;
+	map signal from BMSPackVol_h6HSC6 to application BMSPackVol;
+	map signal from BMSPtIsltnRstcHSC6 to application BMSPtIsltnRstc;
+	map signal from BMSReserChrgCtrlDspCmdHSC6 to application BMSReserChrgCtrlDspCmd;
+	map signal from BMSReserChrgEnrgDspCmd_h6HSC6 to application BMSReserChrgEnrgDspCmd;
+	map signal from BMSReserChrgFltReasonHSC6 to application BMSReserChrgFltReason;
+	map signal from BMSReserChrgFrqcDspCmdHSC6 to application BMSReserChrgFrqcDspCmd;
+	map signal from BMSReserChrgMdDspCmd_h6HSC6 to application BMSReserChrgMdDspCmd;
+	map signal from BMSReserChrgRespVHSC6 to application BMSReserChrgRespV;
+	map signal from BMSReserChrgRngDspCmd_h6HSC6 to application BMSReserChrgRngDspCmd;
+	map signal from BMSReserDurtnTimeDspCmd_h6HSC6 to application BMSReserDurtnTimeDspCmd;
+	map signal from BMSReserFltReasonHSC6 to application BMSReserFltReason;
+	map signal from BMSReserMaxCrntDspCmd_h6HSC6 to application BMSReserMaxCrntDspCmd;
+	map signal from BMSReserPushItemHSC6 to application BMSReserPushItem;
+	map signal from BMSReserStaDspCmdHSC6 to application BMSReserStaDspCmd;
+	map signal from BMSReserStDurtnTimeDspCmdHSC6 to application BMSReserStDurtnTimeDspCmd;
+	map signal from BMSReserStHourDspCmdHSC6 to application BMSReserStHourDspCmd;
+	map signal from BMSReserStMinuteDspCmdHSC6 to application BMSReserStMinuteDspCmd;
+	map signal from BMSReserTrgtSOCDspCmd_h6HSC6 to application BMSReserTrgtSOCDspCmd;
+	map signal from ChargerStatusHSC6 to application ChargerStatus;
+	map signal from ElecMotEmgcShutDwnHSC6 to application ElecMotEmgcShutDwn;
+	map signal from EPTHVEmgcPwrOffReqHSC6 to application EPTHVEmgcPwrOffReq;
+	map signal from ISGFlr1HSC6 to application ISGFlr1;
+	map signal from ISGFlr2HSC6 to application ISGFlr2;
+	map signal from ISGFlr3HSC6 to application ISGFlr3;
+	map signal from ISGFlr4HSC6 to application ISGFlr4;
+	map signal from ISGFlr5HSC6 to application ISGFlr5;
+	map signal from ISGFlr6HSC6 to application ISGFlr6;
+	map signal from ISGFlr7HSC6 to application ISGFlr7;
+	map signal from ISGFlr8HSC6 to application ISGFlr8;
+	map signal from ISGFltIOHSC6 to application ISGFltIO;
+	map signal from ISGHVInhdHSC6 to application ISGHVInhd;
+	map signal from ISGHVRdyHSC6 to application ISGHVRdy;
+	map signal from ISGInvtrClntTemHSC6 to application ISGInvtrClntTem;
+	map signal from ISGInvtrTemHSC6 to application ISGInvtrTem;
+	map signal from ISGOfstAngHSC6 to application ISGOfstAng;
+	map signal from ISGRtrTemHSC6 to application ISGRtrTem;
+	map signal from ISGSpdHSC6 to application ISGSpd;
+	map signal from ISGSpdVHSC6 to application ISGSpdV;
+	map signal from ISGSttrTemHSC6 to application ISGSttrTem;
+	map signal from keep_network_BMSHSC6 to application keep_network_BMS;
+	map signal from OffbdChrgrSysKeepAwkHSC6 to application OffbdChrgrSysKeepAwk;
+	map signal from OnbdChrgrSysKeepAwkHSC6 to application OnbdChrgrSysKeepAwk;
+	map signal from TMFlr1HSC6 to application TMFlr1;
+	map signal from TMFlr2HSC6 to application TMFlr2;
+	map signal from TMFlr3HSC6 to application TMFlr3;
+	map signal from TMFlr4HSC6 to application TMFlr4;
+	map signal from TMFlr5HSC6 to application TMFlr5;
+	map signal from TMFlr6HSC6 to application TMFlr6;
+	map signal from TMFlr7HSC6 to application TMFlr7;
+	map signal from TMFlr8HSC6 to application TMFlr8;
+	map signal from TMFltIOHSC6 to application TMFltIO;
+	map signal from TMHVInhdHSC6 to application TMHVInhd;
+	map signal from TMHVRdyHSC6 to application TMHVRdy;
+	map signal from TMImmoResultHSC6 to application TMImmoResult;
+	map signal from TMInvtrClntTemHSC6 to application TMInvtrClntTem;
+	map signal from TMInvtrTemHSC6 to application TMInvtrTem;
+	map signal from TMOfstAngHSC6 to application TMOfstAng;
+	map signal from TMRtrTemHSC6 to application TMRtrTem;
+	map signal from TMSpd_h6HSC6 to application TMSpd;
+	map signal from TMSttrTemHSC6 to application TMSttrTem;
+	map signal from wake_network_BMSHSC6 to application wake_network_BMS;
+	map signal from stale constant 12 to application fixed_frame_normal_period;
+	map signal from stale constant 1 to application fixed_frame_startup_period;
+	map signal from stale constant 50 to application keep_net_alive_time_master;
+	map signal from stale constant 20 to application monitoring_timeout_time_master;
+	map signal from stale constant 0 to application null_handler;
+	map signal from stale constant 24 to application wait_for_network_sleep_time_master;
+	map signal from stale constant 4 to application wakeup_pending_time_master;
+
+/* TBOX/TBOX_RTDIAG */
+
+/* Gateways */
+
+/* Initialisation Values */
+	initial value AirbagDplInvsn = 1;
+	initial value AirClnrFltrLifeV = 1;
+	initial value BatVol = 16383;
+	initial value BMSAvlblEnrg = 255;
+	initial value FLTirePrs = 55;
+	initial value FLTireTem = 45;
+	initial value FRTirePrs = 55;
+	initial value FRTireTem = 45;
+	initial value HVDCDCHdwrFlr = true;
+	initial value HVDCDCIntnlFlr = true;
+	initial value HVDCDCOverHtd = true;
+	initial value RLTirePrs = 55;
+	initial value RLTireTem = 45;
+	initial value RRTirePrs = 55;
+	initial value RRTireTem = 45;
+	initial value signal_config_id = 28673;
+	initial value VINBCM = { 0xff, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };
+	initial value TBOXCphr2LrnResultFdbk = 1;
+	initial value BMSCellMaxTem = 255;
+	initial value BMSCellMaxVol = 8191;
+	initial value BMSCellMinVol = 8191;
+	initial value BMSChrgRmnHour = 30;
+	initial value BMSChrgRmnMinute = 62;
+	initial value BMSPackCrnt = 65535;
+	initial value BMSPackSOC = 1023;
+	initial value BMSPackSOCDsp = 1023;
+	initial value BMSPackVol = 4095;
+	initial value BMSPtIsltnRstc = 8191;
+	initial value BMSReserChrgEnrgDspCmd = 62;
+	initial value BMSReserChrgRngDspCmd = 1022;
+	initial value BMSReserDurtnTimeDspCmd = 62;
+	initial value BMSReserMaxCrntDspCmd = 62;
+	initial value BMSReserStDurtnTimeDspCmd = 30;
+	initial value BMSReserStHourDspCmd = 30;
+	initial value BMSReserStMinuteDspCmd = 62;
+	initial value BMSReserTrgtSOCDspCmd = 1022;
+	initial value ISGInvtrClntTem = 254;
+	initial value ISGInvtrTem = 254;
+	initial value ISGRtrTem = 254;
+	initial value ISGSpd = 32768;
+	initial value ISGSpdV = 1;
+	initial value ISGSttrTem = 254;
+	initial value TMInvtrClntTem = 254;
+	initial value TMInvtrTem = 254;
+	initial value TMRtrTem = 254;
+	initial value TMSpd = 32768;
+	initial value TMSttrTem = 254;
+	initial value signal_config_id_h6 = 24833;
+	initial value TBOXReserChrgEnrg = 62;
+	initial value TBOXReserChrgRng = 1022;
+	initial value TBOXReserDurtnTime = 62;
+	initial value TBOXReserMaxCrnt = 62;
+	initial value TBOXReserStDay = 30;
+	initial value TBOXReserStDurtnTime = 30;
+	initial value TBOXReserStHour = 30;
+	initial value TBOXReserStMinute = 62;
+	initial value TBOXReserStTimeChksm = 254;
+	initial value TBOXReserStYear = 254;
+	initial value TBOXReserTrgtSOC = 1022;
+	initial value TBOXUnvslTimeChksm = 254;

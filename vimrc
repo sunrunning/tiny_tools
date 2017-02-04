@@ -30,6 +30,7 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " " different version somewhere else.
 Plugin 'ascenator/L9', {'name': 'newL9'}
 "
+"Plugin 'plugin/minibufexpl.vim'
 " " All of your Plugins must be added before the following line
 call vundle#end()            " required
 "filetype plugin indent on    " required
@@ -70,6 +71,8 @@ set fdm=syntax
 "set foldopen=all"Open fdm where curse be
 nmap <space> za
 nmap <C-End> z<S-O>
+nmap <C-q> :q <CR>
+nmap <C-s> :w <CR>
 "nmap <C-[> %
 "nmap <s-space> za
 set cursorline
@@ -82,9 +85,22 @@ set statusline+=%h%lx%c
 "Taglist function 'http://www.vim.org/scripts/script.php?script_id=273'
 let Tlist_Chow_One_File=1
 let Tlist_Exit_OnlyWindow=1
+"let g:Tlist_WinWidth=25
 "Open the Taglist window
+"nmap <C-l> :TlistToggle <CR>
 nmap <C-l> :TlistOpen <CR>
 nmap <C-k> :TlistClose <CR>
+
+"Open files and dir explore
+"nmap <C-m> :Vexplore! <CR>
+"let g:netrw_winsize = 14
+"let g:netrw_browse_split = 4
+
+"miniBufExpl extern function
+"let g:miniBufExplMapWindowNavVim = 1
+"let g:miniBufExplMapWindowNavArrows = 1
+"let g:miniBufExplMapCTabSwitchBufs = 1
+"let g:miniBufExplModSelTarget = 1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " CSCOPE settings for vim           
@@ -178,7 +194,7 @@ if has("cscope")
     " go back to where you were before the search.  
     "
 
-    nmap <C-\>s :cs find s <C-R>=expand("<cword>")<CR><CR> :cw <CR>
+    nmap <C-\>s :cs find s <C-R>=expand("<cword>")<CR><CR> :cw <CR> <C-W> j
 	"Find symbol in this Project, and list in QuickFix window
 	nmap <C-z> :cclose<CR>	
 	"Close QuickFix window
